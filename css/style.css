@@ -9,6 +9,30 @@
   width: 430px;
   height: 556px;
 }
+.colored-hr {
+  width: 99%;
+  height: 3px; /* Adjust the thickness of the line */
+  border-radius: 2px;
+  background: linear-gradient(to right, #FFB400 90%, white 10%);
+  margin: 20px auto; /* Center the hr element */
+  border: none;
+  /*margin: 3px 0; !* Adjust the spacing around the line *!*/
+}
+
+.line-div{
+  height: 7px;
+  width: 90%;
+  border: 1px solid #FFB400;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  margin: 20px 0;
+}
+
+.skill-mark{
+  height: 15px;
+}
 
 
 

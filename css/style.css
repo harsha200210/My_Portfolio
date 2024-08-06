@@ -62,6 +62,23 @@ button{
   border: #FFB400;
 }
 
+.contact-icon{
+  width: 50%; /* Adjust the size of the icon relative to the circle */
+  height: 50%; /* Adjust the size of the icon relative to the circle */
+  object-fit: cover;
+}
+
+.contact-icon-background{
+  height: 40px;
+  width: 40px;
+  background: #FFB400;
+  border-radius: 50%; /* Make the div circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 
 
 

@@ -32,56 +32,81 @@
 
   <header>
 <!--navigation part-->
-    <nav>
-      <a href="">
-        <img src="icon/home_icon_black.png" class="header_icon">
+    <nav class="sidenav">
+      <a href="#home">
+        <div class="nav-icon-background div1">
+          <img src="icon/home_icon_gray.png" class="header_icon" alt="Home Icon">
+          <img src="icon/home_icon_black.png" class="hover_icon" alt="Home Icon Hover">
+        </div>
       </a><br>
       <a href="#about">
-        <img src="icon/about_icon_gray.png" class="header_icon">
+        <div class="nav-icon-background div2">
+          <img src="icon/about_icon_gray.png" class="header_icon" alt="About Icon">
+          <img src="icon/about_icon_black.png" class="hover_icon" alt="About Icon Hover">
+        </div>
       </a><br>
       <a href="#skill">
-        <img src="icon/skill_icon_gray.png" class="header_icon">
+        <div class="nav-icon-background div3">
+          <img src="icon/skill_icon_gray.png" class="header_icon" alt="Skill Icon">
+          <img src="icon/skill_icon_black.png" class="hover_icon" alt="Skill Icon Hover">
+        </div>
       </a><br>
       <a href="#service">
-        <img src="icon/service_icon_gray.png" class="header_icon">
+        <div class="nav-icon-background div4">
+          <img src="icon/service_icon_gray.png" class="header_icon" alt="Service Icon">
+          <img src="icon/service_icon_black.png" class="hover_icon" alt="Service Icon Hover">
+        </div>
       </a><br>
       <a href="#education">
-        <img src="icon/education_icon_gray.png" class="header_icon">
+        <div class="nav-icon-background div5">
+          <img src="icon/education_icon_gray.png" class="header_icon" alt="Education Icon">
+          <img src="icon/education_icon_black.png" class="hover_icon" alt="Education Icon Hover">
+        </div>
       </a><br>
       <a href="#project">
-        <img src="icon/project_icon_gray.png" class="header_icon">
+        <div class="nav-icon-background div6">
+          <img src="icon/project_icon_gray.png" class="header_icon" alt="Project Icon">
+          <img src="icon/project_icon_black.png" class="hover_icon" alt="Project Icon Hover">
+        </div>
       </a><br>
       <a href="#contact">
-        <img src="icon/contact_icon_gray.png" class="header_icon">
+        <div class="nav-icon-background div7">
+          <img src="icon/contact_icon_gray.png" class="header_icon" alt="Contact Icon">
+          <img src="icon/contact_icon_black.png" class="hover_icon" alt="Contact Icon Hover">
+        </div>
       </a><br>
     </nav>
   </header>
 
-  <main>
+  <main id="home">
 <!--name section-->
     <section>
       <div>
-        <h1 style="font-size: 65px">I'm <span style="color: #FFB400">Harsha Dilan</span></h1>
-        <h3 style="font-size: 35px"><span style="color: #FFB400">Student Of</span> Software Engineering</h3>
+        <h1>I'm <span style="color: #FFB400">Harsha Dilan</span></h1>
+        <h3><span style="color: #FFB400">Student Of</span> Software Engineering</h3>
       </div>
       <div>
-        <button>Hire me</button>
+        <a href="#contact">
+          <button>Hire me</button>
+        </a>
         <a href="" download>
-          <button>Download CV</button>
+          <button type="button">Download CV</button>
         </a>
       </div>
     </section>
 <!--image section-->
     <section>
-      <img src="img/harsha.png" class="main_image">
+      <img src="img/harsha.png" class="main_image" alt="Harsha's Picture">
     </section>
   </main>
 
   <main id="about">
-    <h2>About</h2>
     <section>
-      <p>With years of experience in building robust and efficient server-side applications, I strive to develop systems that ensure smooth and reliable user experiences. My expertise spans a wide range of server technologies and database management principles, allowing me to bring any complex functionality to life.<br>
-        I excel at creating seamless interactions between the server, database, and client-side applications, ensuring that every project I undertake not only meets but exceeds expectations. Whether it’s optimizing performance, securing data, or developing scalable APIs, I approach each task with creativity and precision.<br>
+      <h2>About</h2>
+    </section>
+    <section>
+      <p>With years of experience in building robust and efficient server-side applications, I strive to develop systems that ensure smooth and reliable user experiences. My expertise spans a wide range of server technologies and database management principles, allowing me to bring any complex functionality to life.<br><br>
+        I excel at creating seamless interactions between the server, database, and client-side applications, ensuring that every project I undertake not only meets but exceeds expectations. Whether it’s optimizing performance, securing data, or developing scalable APIs, I approach each task with creativity and precision.<br><br>
         I'm always eager to tackle new challenges and bring fresh solutions to the table. Let’s work together to build something remarkable!</p>
     </section>
   </main>
@@ -90,69 +115,71 @@
     <h2>Skills</h2>
 <!--skills section-->
     <section>
-        <label>Skills</label>
-      <div>
-        <label>HTML</label>
-        <label>90%</label>
-        <div class="line-div">
-          <hr class="colored-hr">
+      <section>
+        <label><strong>Skills</strong></label><br><br><br>
+        <div>
+          <label>HTML</label>
+          <label>90%</label>
+          <div class="line-div">
+            <hr class="colored-hr1">
+          </div>
         </div>
-      </div>
-      <div>
-        <label>CSS</label>
-        <label>85%</label>
-        <div class="line-div">
-          <hr class="colored-hr">
+        <div>
+          <label>CSS</label>
+          <label>85%</label>
+          <div class="line-div">
+            <hr class="colored-hr2">
+          </div>
         </div>
-      </div>
-      <div>
-        <label>Js</label>
-        <label>80%</label>
-        <div class="line-div">
-          <hr class="colored-hr">
+        <div>
+          <label>Js</label>
+          <label>80%</label>
+          <div class="line-div">
+            <hr class="colored-hr3">
+          </div>
         </div>
-      </div>
-      <div>
-        <label>Java</label>
-        <label>75%</label>
-        <div class="line-div">
-          <hr class="colored-hr">
+        <div>
+          <label>Java</label>
+          <label>75%</label>
+          <div class="line-div">
+            <hr class="colored-hr4">
+          </div>
         </div>
-      </div>
-      <div>
-        <label>SQL</label>
-        <label>85%</label>
-        <div class="line-div">
-          <hr class="colored-hr">
+        <div>
+          <label>SQL</label>
+          <label>85%</label>
+          <div class="line-div">
+            <hr class="colored-hr5">
+          </div>
         </div>
-      </div>
-      <div>
-        <label>Java Fx</label>
-        <label>80%</label>
-        <div class="line-div">
-          <hr class="colored-hr">
+        <div>
+          <label>Java Fx</label>
+          <label>80%</label>
+          <div class="line-div">
+            <hr class="colored-hr6">
+          </div>
         </div>
-      </div>
-    </section>
-<!--extra skill section-->
-    <section>
-      <label>Extra Skills</label>
-      <div>
-        <img src="icon/skill_mark.png" class="skill-mark">
-        <label>Bootstrap, Materialize</label>
-      </div>
-      <div>
-        <img src="icon/skill_mark.png" class="skill-mark">
-        <label>Stylus, Sass, Less</label>
-      </div>
-      <div>
-        <img src="icon/skill_mark.png" class="skill-mark">
-        <label>Gulp, Webpack, Grunt</label>
-      </div>
-      <div>
-        <img src="icon/skill_mark.png" class="skill-mark">
-        <label>GIT Knowledge</label>
-      </div>
+      </section>
+      <!--extra skill section-->
+      <section>
+        <label><strong>Extra Skills</strong></label><br><br><br>
+        <div>
+          <img src="icon/skill_mark.png" class="skill-mark">
+          <label>Bootstrap, Materialize</label>
+        </div><br><br>
+        <div>
+          <img src="icon/skill_mark.png" class="skill-mark">
+          <label>Stylus, Sass, Less</label>
+        </div><br><br>
+        <div>
+          <img src="icon/skill_mark.png" class="skill-mark">
+          <label>Gulp, Webpack, Grunt</label>
+        </div><br><br>
+        <div>
+          <img src="icon/skill_mark.png" class="skill-mark">
+          <label>GIT Knowledge</label>
+        </div>
+      </section>
     </section>
   </main>
 
@@ -161,19 +188,19 @@
 <!--services section-->
     <section>
       <div>
-        <img src="icon/web_development.png" class="service-image"><br>
+        <img src="icon/web_development.png" class="service-image" alt="Web Development Icon"><br>
         <label>Web Development</label><br>
         <label>blog, e-commerce</label>
       </div>
       <div>
-        <img src="icon/ui-ux.png" class="service-image"><br>
-        <label>uI/uX design</label><br>
-        <label>Mobile app, website design</label>
+        <img src="icon/ui-ux.png" class="service-image" alt="UI/UX Icon"><br>
+          <label>uI/uX design</label><br>
+          <label>Mobile app, website design</label>
       </div>
       <div>
-        <img src="icon/standalone_application.png" class="service-image"><br>
-        <label>Standalone application</label><br>
-        <label>POS system</label>
+        <img src="icon/standalone_application.png" class="service-image3" alt="Standalone Application Icon"><br>
+          <label>Standalone application</label><br>
+          <label>POS system</label>
       </div>
     </section>
   </main>
@@ -191,7 +218,9 @@
       </div>
       <div>
         <label>Diploma Of Software Engineering</label>
-        <p>Writing clean , efficient , and maintainable code that follows best practice and coding standards</p>
+        <ul>
+          <li>Writing clean , efficient , and maintainable code that follows best practice and coding standards</li>
+        </ul>
       </div>
     </section>
   </main>
@@ -201,7 +230,7 @@
 <!--project 1-->
     <section>
       <div>
-        <img src="img/laptopshop.jpg" class="project-image">
+        <img src="img/laptopshop.jpg" class="project-image" alt="UI Picture">
       </div>
       <div>
         <label>Laptop Shop Management System</label>
@@ -214,7 +243,7 @@
     <!--project 2-->
     <section>
       <div>
-        <img src="img/connectfour.jpg" class="project-image">
+        <img src="img/connectfour.jpg" class="project-image" alt="UI Picture">
       </div>
       <div>
         <label>Connect Four Game</label>
@@ -226,128 +255,143 @@
     </section>
   </main>
 
-  <main>
+  <main id="recommendation">
     <h2>Recommendations</h2>
-<!--1 st recommendations-->
     <section>
-      <div>
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-      </div>
-      <div>
-        <label>Great Quality!</label>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
-      </div>
-      <div>
-        <img src="icon/user_icon.png"><br>
-        <label>James Gouse</label><br>
-        <label>Graphic Designer</label>
-      </div>
-    </section>
-    <!--2 nd recommendations-->
-    <section>
-      <div>
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-      </div>
-      <div>
-        <label>Great Quality!</label>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
-      </div>
-      <div>
-        <img src="icon/user_icon.png"><br>
-        <label>James Gouse</label><br>
-        <label>Graphic Designer</label>
-      </div>
-    </section>
-    <!--3 rd recommendations-->
-    <section>
-      <div>
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-        <img src="icon/star_icon.png" class="star">
-      </div>
-      <div>
-        <label>Great Quality!</label>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
-      </div>
-      <div>
-        <img src="icon/user_icon.png"><br>
-        <label>James Gouse</label><br>
-        <label>Graphic Designer</label>
-      </div>
+      <!--1 st recommendations-->
+      <section>
+        <div>
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+        </div>
+        <div>
+          <label><strong>Great Quality!</strong></label><br><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+        </div>
+        <div>
+          <img src="icon/user_icon.png"><br>
+          <label>James Gouse</label><br>
+          <label>Graphic Designer</label>
+        </div>
+      </section>
+      <!--2 nd recommendations-->
+      <section>
+        <div>
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+        </div>
+        <div>
+          <label><strong>Great Quality!</strong></label><br><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+        </div>
+        <div>
+          <img src="icon/user_icon.png"><br>
+          <label>James Gouse</label><br>
+          <label>Graphic Designer</label>
+        </div>
+      </section>
+      <!--3 rd recommendations-->
+      <section>
+        <div>
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+          <img src="icon/star_icon.png" class="star">
+        </div>
+        <div>
+          <label><strong>Great Quality!</strong></label><br><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. Morbi donec amet....</p>
+        </div>
+        <div>
+          <img src="icon/user_icon.png"><br>
+          <label>James Gouse</label><br>
+          <label>Graphic Designer</label>
+        </div>
+      </section>
     </section>
   </main>
 
   <main id="contact">
-<!--mail section-->
     <section>
-      <h2>Leave us your info</h2>
-      <div>
-        <label>Your Full Name ( Required)</label><br>
-        <textarea></textarea><br>
-        <label>Your Email ( Required)</label><br>
-        <textarea></textarea><br>
-        <label>Subject</label><br>
-        <textarea></textarea><br>
-        <label>Your Message</label><br>
-        <textarea></textarea><br>
-        <button>SEND MESSAGE</button>
-      </div>
-    </section>
-<!--contact section-->
-    <section>
-      <h2>Contact information</h2>
-      <!--address-->
-      <div>
-        <div class="contact-icon-background">
-          <img src="icon/map_icon.png" class="contact-icon"><br>
+      <!--mail section-->
+      <section>
+        <h2>Leave us your info</h2>
+        <div>
+          <label for="name">Your Full Name ( Required)</label><br>
+          <textarea id="name"></textarea><br>
+          <label for="your-email">Your Email ( Required)</label><br>
+          <textarea id="your-email"></textarea><br>
+          <label for="subject">Subject</label><br>
+          <textarea id="subject"></textarea><br>
+          <label for="message">Your Message</label><br>
+          <textarea id="message"></textarea><br>
+          <button type="button">SEND MESSAGE</button>
         </div>
-        <label>Country:</label>
-        <label>Sri Lanka</label><br>
-        <label>City:</label>
-        <label>Horana</label><br>
-        <label>Street:</label>
-        <label>40 Nagalakanda, Kuda Uduwa</label>
-      </div>
-      <!--email and social-->
-      <div>
-        <div class="contact-icon-background">
-          <img src="icon/mail_icon.png" class="contact-icon"><br>
+      </section>
+      <!--contact section-->
+      <section>
+        <h2>Contact information</h2>
+        <!--address-->
+        <div>
+          <div class="contact-icon-background">
+            <img src="icon/map_icon.png" class="contact-icon"><br>
+          </div>
+          <div>
+            <label>Country:</label>
+            <label>Sri Lanka</label><br>
+            <label>City:</label>
+            <label>Horana</label><br>
+            <label>Street:</label>
+            <label>40 Nagalakanda, Kuda Uduwa</label>
+          </div>
         </div>
-        <label>Email:</label>
-        <label>harshadilanbb2020@gmail.com</label><br>
-        <label>Linkedin:</label>
-        <label>Harsha Dilan</label><br>
-        <label>Telegram:</label>
-        <label>Harsha Dilan</label>
-      </div>
-      <!--address-->
-      <div>
-        <div class="contact-icon-background">
-          <img src="icon/phone_icon.png" class="contact-icon"><br>
+        <!--address-->
+        <div>
+          <div class="contact-icon-background">
+            <img src="icon/phone_icon.png" class="contact-icon"><br>
+          </div>
+          <div>
+            <label>Country:</label>
+            <label>Sri Lanka</label><br>
+            <label>City:</label>
+            <label>Horana</label><br>
+            <label>Street:</label>
+            <label>40 Nagalakanda, Kuda Uduwa</label>
+          </div>
         </div>
-        <label>Country:</label>
-        <label>Sri Lanka</label><br>
-        <label>City:</label>
-        <label>Horana</label><br>
-        <label>Street:</label>
-        <label>40 Nagalakanda, Kuda Uduwa</label>
-      </div>
-    </section>
-    <!--map section-->
-    <section>
-      <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2111.4505439404106!2d80.06274879466497!3d6.761673152897011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1722938247929!5m2!1sen!2slk" width="970" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+        <!--social links-->
+        <div>
+          <div class="social-icon-background">
+            <img src="icon/mail_icon_gray.png" class="header_icon">
+            <img src="icon/mail_icon_black.png" class="hover_icon">
+          </div>
+          <div class="social-icon-background">
+            <img src="icon/linkedin_icon_gray.png" class="header_icon">
+            <img src="icon/linkedin_icon_black.png" class="hover_icon">
+          </div>
+          <div class="social-icon-background">
+            <img src="icon/github_icon_gray.png" class="header_icon">
+            <img src="icon/github_icon_black.png" class="hover_icon">
+          </div>
+          <div class="social-icon-background">
+            <img src="icon/facebook_icon_gray.png" class="header_icon">
+            <img src="icon/facebook_icon_black.png" class="hover_icon">
+          </div>
+        </div>
+      </section>
+      <!--map section-->
+      <section>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2111.4505439404106!2d80.06274879466497!3d6.761673152897011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1722938247929!5m2!1sen!2slk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
     </section>
   </main>
 

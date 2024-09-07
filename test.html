@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Scroll Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    #target {
+      margin-top: 1000px; /* Just to demonstrate scrolling from a distance */
+      padding: 20px;
+      background-color: lightblue;
+      animation: alternate;
+    }
+  </style>
+</head>
+<body>
+
+<form>
+  <label id="scrollLabel" for="name">Click me to scroll up</label>
+  <input type="text" id="name" name="name" />
+</form>
+
+<div id="target">
+  <h2>This is the target section</h2>
+  <p>When the label above is clicked, the page will scroll up to this section.</p>
+</div>
+
+<script>
+  // Attach an event listener to the label
+  document.getElementById('scrollLabel').addEventListener('click', function() {
+    // Get the target element to scroll to (e.g., the top of the page)
+    document.getElementById('target').scrollIntoView({
+      behavior: 'smooth', // Smooth scroll effect
+      block: 'start' // Aligns the element at the top of the view
+    });
+  });
+</script>
+
+</body>
+</html>

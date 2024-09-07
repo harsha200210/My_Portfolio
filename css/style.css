@@ -1,15 +1,279 @@
+body{
+  margin-left: 120px;
+  background: #F0F0F6;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav {
+  width: 85px; /* Set the width of the sidebar */
+  background: #BEB8B8;
+  border-radius: 20px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 50px; /* Place content 20px from the top */
+  padding-bottom: 50px;
+  position: fixed; /* Fixed Sidebar (stay in place) */
+  top: 50%; /* Move down by 50% */
+  left: 5px;
+  transform: translateY(-50%); /* Center vertically */
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: block;
+    min-height: auto;
+    margin-left: 0;
+    left: 0;
+  }
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+  }
+}
+
 .header_icon{
   width: 20px;
   height: 20px;
-  margin-top: 30px;
-  margin-left: 10px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
-.main_image{
-  width: 430px;
-  height: 556px;
+.hover_icon{
+  width: 25px;
+  height: 20px;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-.colored-hr {
+
+.nav-icon-background{
+  height: 40px;
+  width: 40px;
+  background: #F0F0F6;
+  border-radius: 50%; /* Make the div circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+  margin-left: 20px;
+}
+
+.nav-icon-background:hover{
+  background: #FFB400;
+}
+
+.nav-icon-background:hover .header_icon {
+  opacity: 0;
+}
+.nav-icon-background:hover .hover_icon {
+  opacity: 1;
+}
+
+.nav-icon-background::after {
+  content: "Default Tooltip"; /* Default tooltip content */
+  position: absolute;
+  bottom: 100%; /* Move above the element */
+  left: 65%;
+  transform: translateX(-50%);
+  background-color: #2B2B2B;
+  color: #F0F0F6;
+  padding: 5px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+}
+
+.nav-icon-background:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Additional classes for different hover effects */
+.nav-icon-background.div1::after {
+  content: "Home";
+}
+
+.nav-icon-background.div2::after {
+  content: "About";
+}
+
+.nav-icon-background.div3::after {
+  content: "Skills";
+}
+
+.nav-icon-background.div4::after {
+  content: "Service";
+}
+
+.nav-icon-background.div5::after {
+  content: "Education";
+}
+
+.nav-icon-background.div6::after {
+  content: "Projects";
+}
+
+.nav-icon-background.div7::after {
+  content: "Contact";
+}
+
+h1{
+  font-size: 14vh;
+  color: #2B2B2B;
+}
+
+h3{
+  font-size: 6vh;
+  color: #2B2B2B;
+}
+
+/*-------------- main view styles -------------------*/
+
+.main_image{
+  width: 25vw;
+  height: 70vh;
+}
+
+#home{
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+  width: 92vw;
+  height: 70vh;
+  position: relative;
+}
+
+#home>section:nth-child(1){
+  position: absolute;
+  left: 9vw;
+  top: 10vh;
+}
+
+#home>section:nth-child(2){
+  position: absolute;
+  right: 9vw;
+  top: 0;
+}
+
+#home>section:nth-child(1) button{
+  background: #FFB400;
+  color: #2B2B2B;
+  width: 17vw;
+  height: 6vh;
+  margin-top: 80px;
+  margin-right: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+button{
+  background: #FFB400;
+  color: #2B2B2B;
+  border: #FFB400;
+}
+
+
+/*-------------- about view styles -------------------*/
+
+#about{
+  width: 92vw;
+  height: 60vh;
+  position: relative;
+  top: 100px;
+}
+
+#about>section:nth-child(1)>h2{
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 50%;
+  right: -50%;
+  margin: auto;
+  font-size: 4vh;
+}
+
+#about>section:nth-child(2){
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#about p{
+  font-size: 3vh;
+  margin: 50px 100px;
+  color: #445151;
+}
+/*-------------- skill view styles -------------------*/
+
+#skill{
+  width: 92vw;
+  height: 60vh;
+  position: relative;
+  top: 200px;
+}
+
+#skill>h2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: -50%;
+  margin: auto;
+  font-size: 4vh;
+}
+
+#skill>section{
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+  color: #445151;
+  width: 92vw;
+  height: 55vh;
+  position: relative;
+  top: 90px;
+}
+
+#skill>section>section:nth-child(1){
+  width: 70%;
+  height: 30%;
+  position: absolute;
+  top: 9vh;
+  left: 10vh;
+}
+
+#skill>section>section:nth-child(2){
+  width: 20%;
+  position: absolute;
+  top: 14vh;
+  right: 0;
+}
+#skill>section>section:nth-child(1)>div>label:nth-child(2){
+  position: absolute;
+  right: 10%;
+}
+
+.line-div{
+  height: 4px;
+  width: 90%;
+  border: 1px solid #FFB400;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  margin: 1vh 0;
+}
+.colored-hr1 {
   width: 99%;
   height: 3px; /* Adjust the thickness of the line */
   border-radius: 2px;
@@ -18,24 +282,218 @@
   border: none;
   /*margin: 3px 0; !* Adjust the spacing around the line *!*/
 }
-
-.line-div{
-  height: 7px;
-  width: 90%;
-  border: 1px solid #FFB400;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;
-  margin: 20px 0;
+.colored-hr2 {
+  width: 99%;
+  height: 3px; /* Adjust the thickness of the line */
+  border-radius: 2px;
+  background: linear-gradient(to right, #FFB400 85%, white 15%);
+  margin: 20px auto; /* Center the hr element */
+  border: none;
+  /*margin: 3px 0; !* Adjust the spacing around the line *!*/
 }
+.colored-hr3 {
+  width: 99%;
+  height: 3px; /* Adjust the thickness of the line */
+  border-radius: 2px;
+  background: linear-gradient(to right, #FFB400 80%, white 20%);
+  margin: 20px auto; /* Center the hr element */
+  border: none;
+  /*margin: 3px 0; !* Adjust the spacing around the line *!*/
+}
+.colored-hr4 {
+  width: 99%;
+  height: 3px; /* Adjust the thickness of the line */
+  border-radius: 2px;
+  background: linear-gradient(to right, #FFB400 75%, white 25%);
+  margin: 20px auto; /* Center the hr element */
+  border: none;
+  /*margin: 3px 0; !* Adjust the spacing around the line *!*/
+}
+.colored-hr5 {
+  width: 99%;
+  height: 3px; /* Adjust the thickness of the line */
+  border-radius: 2px;
+  background: linear-gradient(to right, #FFB400 85%, white 15%);
+  margin: 20px auto; /* Center the hr element */
+  border: none;
+  /*margin: 3px 0; !* Adjust the spacing around the line *!*/
+}
+.colored-hr6 {
+  width: 99%;
+  height: 3px; /* Adjust the thickness of the line */
+  border-radius: 2px;
+  background: linear-gradient(to right, #FFB400 80%, white 20%);
+  margin: 20px auto; /* Center the hr element */
+  border: none;
+  /*margin: 3px 0; !* Adjust the spacing around the line *!*/
+}
+
 
 .skill-mark{
   height: 15px;
 }
 
+/*-------------- service view styles -------------------*/
+
 .service-image{
-  height: 80px;
+  height: 17vh;
+}
+.service-image3{
+  height: 22vh;
+}
+
+#service{
+  width: 92vw;
+  height: 60vh;
+  position: relative;
+  top: 350px;
+}
+
+#service>h2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 47%;
+  right: -50%;
+  margin: auto;
+  font-size: 4vh;
+}
+
+#service>section{
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  top: 90px;
+}
+
+#service>section>div:nth-child(1){
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+  position: absolute;
+  width: calc(100%/3 - 20px);
+  height: 35vh;
+  top: 10px;
+}
+
+#service>section>div:nth-child(2){
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+  position: absolute;
+  width: calc(100%/3 - 20px);
+  height: 35vh;
+  left: calc(100%/3 + 20px);
+  top: 10px;
+}
+
+#service>section>div:nth-child(3){
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+  position: absolute;
+  width: calc(100%/3 - 30px);
+  height: 35vh;
+  left: calc(100%/3 * 2 + 40px);
+  right: 0;
+  top: 10px;
+}
+
+#service>section>div>img{
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#service>section>div:nth-child(3)>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#service>section>div:nth-child(1)>label:nth-child(3){
+  position: absolute;
+  left: 33%;
+  right: -50%;
+  bottom: 70px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2B2B2B;
+}
+
+#service>section>div:nth-child(1)>label:nth-child(5){
+  position: absolute;
+  left: 37%;
+  right: -50%;
+  bottom: 40px;
+  margin: auto;
+  color: #445151;
+}
+
+#service>section>div:nth-child(2)>label:nth-child(3){
+  position: absolute;
+  left: 39%;
+  right: -50%;
+  bottom: 70px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2B2B2B;
+}
+
+#service>section>div:nth-child(2)>label:nth-child(5){
+  position: absolute;
+  left: 33%;
+  right: -50%;
+  bottom: 40px;
+  margin: auto;
+  color: #445151;
+}
+
+#service>section>div:nth-child(3)>label:nth-child(3){
+  position: absolute;
+  left: 29%;
+  right: -50%;
+  bottom: 70px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2B2B2B;
+}
+
+#service>section>div:nth-child(3)>label:nth-child(5){
+  position: absolute;
+  left: 40%;
+  right: -50%;
+  bottom: 40px;
+  margin: auto;
+  color: #445151;
+}
+
+
+/*-------------- education view styles -------------------*/
+
+#education{
+  width: 92vw;
+  height: 30vh;
+  position: relative;
+  top: 330px;
+}
+
+#education>h2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 47%;
+  right: -50%;
+  margin: auto;
+  font-size: 4vh;
+}
+
+#education>section{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  top: 90px;
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
 }
 
 .education-inside{
@@ -45,27 +503,387 @@
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center;
+  position: absolute;
+  left: 100px;
+  top: 35px;
+}
+
+#education>section>div:nth-child(1){
+  position: absolute;
+  top: 30%;
+  bottom: 20%;
+  left: 10%;
+  margin: auto;
+}
+#education>section>div:nth-child(1)>label:nth-child(1){
+  color: #2B2B2B;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#education>section>div:nth-child(1)>label:nth-child(3){
+  color: #2B2B2B;
+  font-size: 15px;
+  position: absolute;
+  top: 35px;
+}
+#education>section>div:nth-child(2){
+  position: absolute;
+  top: 30%;
+  bottom: 20%;
+  right: 10%;
+  margin: auto;
+}
+#education>section>div:nth-child(2)>label{
+  color: #2B2B2B;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#education>section>div:nth-child(2)>ul>li{
+  color: #2B2B2B;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/*-------------- project view styles -------------------*/
+
+#project{
+  width: 92vw;
+  height: 90vh;
+  position: relative;
+  top: 380px;
+}
+
+#project>h2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 47%;
+  right: -50%;
+  margin: auto;
+  font-size: 4vh;
+}
+
+#project>section:nth-child(2){
+  position: absolute;
+  width: 48%;
+  height: 80%;
+  top: 90px;
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+}
+#project>section:nth-child(3){
+  position: absolute;
+  width: 48%;
+  height: 80%;
+  top: 90px;
+  right: 0;
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+}
+#project>section>div:nth-child(1){
+  position: relative;
+  width: 100%;
+  height: 80%;
+}
+#project>section>div:nth-child(1)>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+#project>section>div:nth-child(2){
+  position: relative;
+  width: 100%;
+  height: 20%;
+}
+#project>section>div:nth-child(2)>label{
+  position: absolute;
+  top: 10px;
+  left: 24%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: #2B2B2B;
+  font-size: 18px;
+  font-weight: bolder;
+}
+#project>section>div:nth-child(2)>p{
+  position: absolute;
+  top: 40px;
+  left: 8%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 60%;
+  color: #2B2B2B;
+  font-size: 15px;
+}
+#project>section>div:nth-child(2)>a{
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+#project>section>div:nth-child(2)>a>img{
+  width: 80%;
 }
 
 .project-image{
   height: 435px;
 }
 
+/*-------------- recommendation view styles -------------------*/
+
+#recommendation{
+  width: 92vw;
+  height: 40vh;
+  position: relative;
+  top: 410px;
+}
+
+#recommendation>h2{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 43%;
+  right: -50%;
+  margin: auto;
+  font-size: 4vh;
+}
+
+#recommendation>section:nth-child(2){
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 170px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#recommendation>section:nth-child(2)>section:nth-child(1){
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+}
+#recommendation>section:nth-child(2)>section:nth-child(2){
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  top: 0;
+  left: 35%;
+  bottom: 0;
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+}
+#recommendation>section:nth-child(2)>section:nth-child(3){
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+}
+#recommendation>section:nth-child(2)>section>div:nth-child(1){
+  position: absolute;
+  height: 10%;
+  top: 20px;
+  left: 40px;
+}
+#recommendation>section:nth-child(2)>section>div:nth-child(2){
+  position: absolute;
+  width: 80%;
+  height: 10%;
+  top: 60px;
+  left: 40px;
+}
+#recommendation>section:nth-child(2)>section>div:nth-child(3){
+  position: absolute;
+  width: 80%;
+  height: 30%;
+  bottom: 10px;
+  left: 40px;
+}
+#recommendation>section:nth-child(2)>section>div:nth-child(3)>label:nth-child(3){
+  position: absolute;
+  top: 20%;
+  left: 120px;
+  font-weight: bolder;
+  color: #2B2B2B;
+}
+#recommendation>section:nth-child(2)>section>div:nth-child(3)>label:nth-child(5){
+  position: absolute;
+  top: 40%;
+  left: 120px;
+  color: #445151;
+}
+#recommendation>section:nth-child(2)>section>div:nth-child(3)>img{
+  height: 90%;
+}
 .star{
   height: 18px;
   margin-left: 5px;
 }
 
-button{
+
+
+/*-------------- contact view styles -------------------*/
+
+#contact{
+  width: 92vw;
+  height: 120vh;
+  position: relative;
+  top: 600px;
+}
+#contact>section{
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#contact>section>section:nth-child(1){
+  width: 55%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+}
+#contact>section>section:nth-child(1)>div{
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+#contact>section>section:nth-child(1)>div>label{
+  font-size: 18px;
+  color: #445151;
+}
+#contact>section>section:nth-child(1)>div>textarea{
+  font-size: 15px;
+  color: #445151;
+  width: 94%;
+  border: 0;
+  background: #F0F0F6;
+}
+#contact>section>section:nth-child(1)>div>textarea:nth-last-child(3){
+  font-size: 15px;
+  color: #445151;
+  width: 94%;
+  height: 30%;
+  border: 0;
+  background: #F0F0F6;
+}
+#contact>section>section:nth-child(1)>div>button{
   background: #FFB400;
   color: #2B2B2B;
   border: #FFB400;
+  width: 20%;
+  height: 8%;
+  font-weight: bolder;
+}
+#contact>section>section:nth-child(2){
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  right: 0;
+}
+#contact>section>section:nth-child(2)>div:nth-child(2){
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  left: 0;
+  margin: auto;
+}
+#contact>section>section:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  margin: auto;
+}
+#contact>section>section:nth-child(2)>div:nth-child(2)>div:nth-child(2)>label{
+  color: #445151;
+  font-size: 18px;
+}
+#contact>section>section:nth-child(2)>div:nth-child(3){
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  right: 0;
+  top: 46%;
+  left: 0;
+  margin: auto;
+}
+#contact>section>section:nth-child(2)>div:nth-child(3)>div:nth-child(2){
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  margin: auto;
+}
+#contact>section>section:nth-child(2)>div:nth-child(3)>div:nth-child(2)>label{
+  color: #445151;
+  font-size: 18px;
+}
+#contact>section>section:nth-child(2)>div:nth-child(4){
+  background: linear-gradient(to bottom,#FFFFFF 34%,#D6D1D1 66%);
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  right: 0;
+  top: 80%;
+  left: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#contact>section>section:nth-child(3){
+  width: 100%;
+  height: 48%;
+  position: absolute;
+  bottom: 0;
+}
+#contact>section>section:nth-child(3)>div{
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 .contact-icon{
   width: 50%; /* Adjust the size of the icon relative to the circle */
   height: 50%; /* Adjust the size of the icon relative to the circle */
   object-fit: cover;
+}
+
+.social-icon-background{
+  height: 40px;
+  width: 40px;
+  background: #F0F0F6;
+  border-radius: 50%; /* Make the div circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .contact-icon-background{
@@ -77,8 +895,46 @@ button{
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 15px auto auto;
 }
 
+.social-icon-background:hover{
+  background: #FFB400;
+}
+
+.social-icon-background:hover .header_icon {
+  opacity: 0;
+}
+
+.social-icon-background:hover .hover_icon {
+  opacity: 1;
+}
+
+/*-------------- footer view styles -------------------*/
+footer{
+  position: relative;
+  top: 650px;
+  bottom: 50px;
+  margin-bottom: 50px;
+}
+footer>section{
+  width: 80%;
+  height: 20%;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto 50px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 

@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Harsha Dilan">
   <meta name="keyword" content="HTML, CSS, JavaScript">
-  <meta http-equiv="refresh" content="30">
   <meta name="description" content="HTML, CSS, JavaScript">
 
   <title>Harsha Dilan</title>
@@ -90,6 +89,15 @@
         border-right: 3px solid black;
         font-size: 20px;
       }
+      /*.backgroundImage {*/
+      /*  width: 400px;*/
+      /*  height: 300px;*/
+      /*  transform: translate(150px,-300px);*/
+      /*}*/
+      /*.backgroundImage>img {*/
+      /*  width: 300px;*/
+      /*  height: 300px;*/
+      /*}*/
 
       /*--------- skills section ----------*/
       .skill>div:first-child{
@@ -184,16 +192,26 @@
         border-right: 3px solid black;
         font-size: 17px;
       }
-      .about>section:nth-child(5)>div>img{
+      .service>div>img{
         width: 52px;
         height: 56px;
       }
-      .about>section:nth-child(5)>div>label {
+      .service>div>label {
         font-size: 18px;
       }
-      .about>section:nth-child(5)>div>p{
+      .service>div>p{
         font-size: 12px;
       }
+      /*.backgroundImage {*/
+      /*  width: 300px;*/
+      /*  height: 200px;*/
+      /*  transform: translate(150px,-300px);*/
+      /*  display: none;*/
+      /*}*/
+      /*.backgroundImage>img {*/
+      /*  width: 200px;*/
+      /*  height: 200px;*/
+      /*}*/
 
       /*--------- skills section ----------*/
       .skill>div:first-child{
@@ -225,6 +243,7 @@
       .divider{
         width: 190%;
         left: -90%;
+        overflow: hidden;
       }
       .left-section>label:nth-child(1){
         font-size: 35px;
@@ -302,17 +321,17 @@
         width: 17%;
         top: 60px;
       }
-      .about>section:nth-child(5){
+      .service{
         top: 80px;
       }
-      .about>section:nth-child(5)>div>img{
+      .service>div>img{
         width: 50px;
         height: 50px;
       }
-      .about>section:nth-child(5)>div>label {
+      .service>div>label {
         font-size: 15px;
       }
-      .about>section:nth-child(5)>div>p{
+      .service>div>p{
         font-size: 12px;
       }
       /*--------- skills section ----------*/
@@ -348,6 +367,7 @@
       .divider{
         width: 300%;
         left: -145%;
+        overflow: hidden;
       }
       .left-section>label:nth-child(1){
         font-size: 30px;
@@ -427,27 +447,27 @@
         width: 22%;
         top: 70px;
       }
-      .about>section:nth-child(5){
+      .service{
         top: 100px;
       }
-      .about>section:nth-child(5)>div>img{
+      .service>div>img{
         width: 40px;
         height: 40px;
       }
-      .about>section:nth-child(5)>div>label {
+      .service>div>label {
         font-size: 12px;
       }
-      .about>section:nth-child(5)>div>p{
+      .service>div>p{
         font-size: 11px;
       }
-      .about>section:nth-child(5)>div:nth-child(1)>img,.about>section:nth-child(5)>div:nth-child(2)>img{
+      .service>div:nth-child(1)>img,.service>div:nth-child(2)>img{
         left: 10px;
       }
-      .about>section:nth-child(5)>div:nth-child(1)>label,.about>section:nth-child(5)>div:nth-child(2)>label{
+      .service>div:nth-child(1)>label,.service>div:nth-child(2)>label{
         left: -10px;
         top: 5px;
       }
-      .about>section:nth-child(5)>div:nth-child(3)>img{
+      .service>div:nth-child(3)>img{
         left: -40px;
         top: 5px;
       }
@@ -547,29 +567,32 @@
       <img src="image/design_image.webp" alt="design">
     </div>
     <div>Services</div>
-    <section>
+    <section class="service">
       <div>
         <img src="icon/design.png" alt="design">
         <label>Design</label>
-        <p>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
+        <p>I create modern and user-friendly designs tailored to your brand, ensuring an intuitive and engaging experience for your audience.</p>
       </div>
       <div>
         <img src="icon/development.png" alt="development">
         <label>Developments</label>
-        <p>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
+        <p>From concept to completion, I build robust and scalable websites with clean code, ensuring functionality and performance across all platforms.</p>
       </div>
       <div>
         <img src="icon/maintenance.png" alt="maintenance">
         <label>Maintenance</label>
-        <p>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
+        <p>I offer ongoing website support and maintenance to keep your site updated, secure, and running smoothly, allowing you to focus on growing your business.</p>
       </div>
     </section>
+<!--    <div class="backgroundImage">-->
+<!--      <img src="icon/web-programming.png" alt="background design image">-->
+<!--    </div>-->
   </main>
 
   <main id="skill" class="skill">
     <div>Skills</div>
     <label>Using Now :</label>
-    <section>
+    <section class="">
       <div>
         <img src="image/skill%20image/java.png" alt="Java">
         <label>Java</label>
@@ -608,13 +631,15 @@
     </section>
   </main>
 
+  <main id="education" class="education">
+    <div>Education</div>
+    <section class="description"></section>
+    <section class="logo"></section>
+  </main>
+
   <script>
     document.getElementById('link').addEventListener('click', function() {
       alert("okay")
-      document.getElementById('about').scrollIntoView({
-        behavior: 'smooth', // Smooth scroll effect
-        block: 'start', // Aligns the element at the top of the view
-      });
     });
   </script>
 

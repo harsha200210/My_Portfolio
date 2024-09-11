@@ -168,6 +168,7 @@
         padding-right: 10px;
       }
       .right-section-content>img{
+        height: 80vh;
         width: 100%;
       }
       .right-section-content {
@@ -270,6 +271,7 @@
       .social-icons>a>div {
         width: 25px;
         height: 25px;
+        z-index: 4;
       }
       .social-icons>a>div>img{
         top: 4px;
@@ -293,6 +295,8 @@
       }
       .right-section-content>img{
         width: 100%;
+        height: 60vh;
+        z-index: -1;
       }
       .right-section-content {
         left: -220px;
@@ -352,11 +356,11 @@
       .skill>section>div>label{
         font-size: 16px;
       }
-      .skill>section:nth-child(5)>div:nth-child(1)>label,.skill>section:nth-child(5)>div:nth-child(3)>label{
+      .learning-skill>div:nth-child(1)>label,.learning-skill>div:nth-child(3)>label{
         left: 10px;
       }
     }
-    @media all and (max-width: 425px) and (min-width: 320px) {
+    @media all and (max-width: 425px) {
       /*--------- hero section ----------*/
       .left-section{
         width: 75%;
@@ -419,6 +423,7 @@
       }
       .right-section-content>img{
         width: 100%;
+        height: 55vh;
       }
       .right-section-content {
         left: -250px;
@@ -460,10 +465,10 @@
       .service>div>p{
         font-size: 11px;
       }
-      .service>div:nth-child(1)>img,.service>div:nth-child(2)>img{
+      .design>img,.development>img{
         left: 10px;
       }
-      .service>div:nth-child(1)>label,.service>div:nth-child(2)>label{
+      .design>label,.development>label{
         left: -10px;
         top: 5px;
       }
@@ -482,7 +487,7 @@
       .skill>label{
         font-size: 15px;
       }
-      .skill>section:nth-child(3){
+      .using-skill{
         grid-template-columns: repeat(3,1fr);
         height: 40%;
       }
@@ -494,7 +499,7 @@
       .skill>section>div>label{
         font-size: 15px;
       }
-      .skill>section:nth-child(5){
+      .learning-skill{
         width: 90%;
         height: 20%;
       }
@@ -529,7 +534,7 @@
             <img src="icon/facebook.png">
           </div>
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/feed/">
           <div>
             <img src="icon/instagram.png">
           </div>
@@ -568,17 +573,17 @@
     </div>
     <div>Services</div>
     <section class="service">
-      <div>
+      <div class="design">
         <img src="icon/design.png" alt="design">
         <label>Design</label>
         <p>I create modern and user-friendly designs tailored to your brand, ensuring an intuitive and engaging experience for your audience.</p>
       </div>
-      <div>
+      <div class="development">
         <img src="icon/development.png" alt="development">
         <label>Developments</label>
         <p>From concept to completion, I build robust and scalable websites with clean code, ensuring functionality and performance across all platforms.</p>
       </div>
-      <div>
+      <div class="maintenance">
         <img src="icon/maintenance.png" alt="maintenance">
         <label>Maintenance</label>
         <p>I offer ongoing website support and maintenance to keep your site updated, secure, and running smoothly, allowing you to focus on growing your business.</p>
@@ -592,7 +597,7 @@
   <main id="skill" class="skill">
     <div>Skills</div>
     <label>Using Now :</label>
-    <section class="">
+    <section class="using-skill">
       <div>
         <img src="image/skill%20image/java.png" alt="Java">
         <label>Java</label>
@@ -615,7 +620,7 @@
       </div>
     </section>
     <label>Learning :</label>
-    <section>
+    <section class="learning-skill">
       <div>
         <img src="image/skill%20image/springBoot.png" alt="Spring Boot">
         <label>Spring Boot</label>

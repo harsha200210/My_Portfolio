@@ -56,7 +56,7 @@ body {
 }
 
 .right-section-content>img{
-  width: 30vw;
+  width: 37vw;
   height: 90vh;
   position: sticky;
 }
@@ -156,6 +156,10 @@ img{
   right: 50px;
 }
 
+@keyframes name-animation {
+
+}
+
 .left-section>label:nth-child(4){
   font-size: 25px;
   color: #909090;
@@ -170,6 +174,7 @@ img{
   height: 56px;
   background-color: #b7b7b7;
   border-radius: 10px;
+  transition: background-color 1s;
 }
 
 .social-icons>a>div>img{
@@ -181,6 +186,9 @@ img{
   display: flex;
 }
 
+.social-icons>a>div:hover{
+  background-color: #D7D7D7;
+}
 
 /*------------ about section ---------*/
 
@@ -296,13 +304,13 @@ img{
   align-items: center;
 }
 
-.service>div:nth-child(1)>img,.service>div:nth-child(2)>img{
+.design>img,.development>img{
   position: relative;
   top: 20px;
   left: 30px;
 }
 
-.service>div:nth-child(3)>label{
+.maintenance>label{
   position: relative;
   display: flex;
   justify-content: center;
@@ -310,7 +318,7 @@ img{
   top: -20px;
 }
 
-.service>div:nth-child(3)>img{
+.maintenance>img{
   position: relative;
   left: -70px;
   right: 0;
@@ -321,7 +329,7 @@ img{
   align-items: center;
 }
 
-.service>div:nth-child(3)>p{
+.maintenance>p{
   left: 0;
   top: 5px;
 }
@@ -394,7 +402,7 @@ img{
   font-weight: bolder;
 }
 
-.skill>section:nth-child(3){
+.using-skill{
   width: 90%;
   height: 25%;
   display: grid;
@@ -436,14 +444,14 @@ img{
   top: 150px;
 }
 
-.skill>section:nth-child(5){
+.learning-skill{
   width: 54%;
   height: 25%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   position: relative;
   left: 5%;
-  top: 170px;
+  top: 190px;
 }
 
 /*------------ education section ---------*/

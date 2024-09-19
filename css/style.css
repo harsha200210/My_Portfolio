@@ -91,9 +91,14 @@ h2 {
   z-index: 2;
 }
 
-.navbar>img{
+.menu-image{
   display: none;
-  z-index: 0;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 2;
+  width: 12%;
+  height: 5%;
 }
 
 .navbar ul {

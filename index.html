@@ -84,7 +84,7 @@
         border: 4px solid black;
         font-size: 25px;
       }
-      .about>div:nth-child(2){
+      .about>div:nth-child(2)>p{
         font-size: 14px;
       }
       .about>div:nth-child(3)>img{
@@ -95,6 +95,7 @@
         border-right: 3px solid black;
         font-size: 20px;
       }
+
       /*.backgroundImage {*/
       /*  width: 400px;*/
       /*  height: 300px;*/
@@ -115,12 +116,100 @@
       .skill>label{
         font-size: 22px;
       }
-      .skill>section>div>img {
+      .skill>section>div img {
         width: 120px;
         height: 120px;
       }
-      .skill>section>div>label{
+      .skill>section>div label{
         font-size: 22px;
+      }
+
+      /*--------- education section ----------*/
+      .education>div:first-child{
+        width: 20%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 25px;
+      }
+
+      /*--------- project section ----------*/
+      .project>div:first-child{
+        width: 20%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 25px;
+      }
+      .project>section{
+        height: 60%;
+      }
+      .front-content>label{
+        font-size: 20px;
+      }
+      .front-content>p{
+        font-size: 15px;
+      }
+      .git-ico{
+        top: 90%;
+      }
+
+      /*--------- gallery section ----------*/
+      .gallery>div:first-child{
+        width: 20%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 25px;
+      }
+
+      /*--------- contact section ----------*/
+      .contact>div:first-child{
+        width: 20%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 25px;
+      }
+      .email-form{
+        left: 10%;
+      }
+      .email-form>label:first-child{
+        font-size: 20px;
+      }
+      .email-form>label{
+        font-size: 15px;
+      }
+      .contact input[type="text"]{
+        width: 75%;
+      }
+      .email-form>textarea {
+        width: 75%;
+      }
+      .email-form>button{
+        width: 30%;
+        height: 6%;
+        left: 23%;
+        font-size: 14px;
+      }
+      .links{
+        width: 85%;
+        height: 60%;
+      }
+      .links img{
+        width: 40px;
+        height: 40px;
+      }
+      .links>div>img{
+        top: 35%;
+        left: 8%;
+      }
+      .links>div>a{
+        top: 15%;
+        left: 15%;
+      }
+      .links>div>p{
+        position: relative;
+        top: -5%;
+        bottom: 0;
+        left: 9%;
+        font-size: 16px;
       }
     }
 
@@ -230,12 +319,115 @@
       .skill>label{
         font-size: 20px;
       }
-      .skill>section>div>img {
+      .skill>section>div img {
         width: 100px;
         height: 100px;
       }
-      .skill>section>div>label{
+      .skill>section>div label{
         font-size: 20px;
+      }
+
+      /*--------- education section ----------*/
+      .education>div:first-child{
+        width: 20%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 22px;
+      }
+
+      /*--------- project section ----------*/
+      .project>div:first-child{
+        width: 20%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 22px;
+      }
+      .project>section{
+        height: 80%;
+        grid-template-columns: 1fr;
+      }
+      .front-content>label{
+        font-size: 18px;
+      }
+      .front-content>p{
+        font-size: 12px;
+      }
+      .code-p{
+        left: 50%;
+        top: 48%;
+      }
+      .git-ico{
+        top: 70%;
+        left: 50%;
+      }
+
+      /*--------- gallery section ----------*/
+      .gallery>div:first-child{
+        width: 20%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 22px;
+      }
+      .photo-section {
+        width: 80%;
+        height: 60%;
+        top: 100px;
+      }
+
+      /*--------- contact section ----------*/
+      .contact>div:first-child{
+        width: 20%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 22px;
+      }
+      .email-form{
+        left: 0;
+      }
+      .email-form>label:first-child{
+        font-size: 18px;
+      }
+      .email-form>label{
+        font-size: 13px;
+      }
+      .contact input[type="text"]{
+        width: 80%;
+      }
+      .email-form>textarea {
+        width: 80%;
+      }
+      .email-form>button{
+        width: 40%;
+        height: 6%;
+        left: 23%;
+        font-size: 12px;
+      }
+      .links{
+        width: 90%;
+        height: 60%;
+      }
+      .links img{
+        width: 30px;
+        height: 30px;
+      }
+      .links>div>img{
+        top: 35%;
+        left: 8%;
+      }
+      .links>div>a{
+        top: 15%;
+        left: 12%;
+        font-size: 13px;
+      }
+      .links>div>p{
+        position: relative;
+        top: -5%;
+        bottom: 0;
+        left: 6%;
+        font-size: 13px;
+      }
+      .links>div:last-child>a{
+        top: -18%;
       }
     }
 
@@ -289,6 +481,7 @@
       }
       .menu-image{
         display: flex;
+        width: 10%;
       }
       .navbar ul {
         display: none;
@@ -354,16 +547,127 @@
       .skill>label{
         font-size: 17px;
       }
-      .skill>section>div>img {
+      .skill>section>div img {
         width: 80px;
         height: 80px;
         bottom: 80px;
       }
-      .skill>section>div>label{
+      .skill>section>div label{
         font-size: 16px;
+      }
+      .learning-skill{
+        width: 80%;
       }
       .learning-skill>div:nth-child(1)>label,.learning-skill>div:nth-child(3)>label{
         left: 10px;
+      }
+
+      /*--------- education section ----------*/
+      .education>div:first-child{
+        width: 25%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 19px;
+      }
+
+      /*--------- project section ----------*/
+      .project>div:first-child{
+        width: 25%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 19px;
+      }
+      .project>section{
+        height: 80%;
+        grid-template-columns: 1fr;
+      }
+      .front-content>label{
+        font-size: 18px;
+      }
+      .front-content>p{
+        font-size: 12px;
+      }
+      .code-p{
+        left: 50%;
+        top: 48%;
+      }
+      .git-ico{
+        top: 65%;
+        left: 50%;
+      }
+
+      /*--------- gallery section ----------*/
+      .gallery>div:first-child{
+        width: 25%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 19px;
+      }
+      .photo-section {
+        width: 80%;
+        height: 55%;
+        top: 100px;
+      }
+
+      /*--------- contact section ----------*/
+      .contact>div:first-child{
+        width: 25%;
+        height: 6%;
+        border: 4px solid black;
+        font-size: 19px;
+      }
+      .contact>section{
+        grid-template-columns: 1fr;
+        height: 85%;
+      }
+      .email-form{
+        left: 5%;
+      }
+      .email-form>label:first-child{
+        font-size: 15px;
+      }
+      .email-form>label{
+        font-size: 12px;
+      }
+      .contact input[type="text"]{
+        width: 80%;
+      }
+      .email-form>textarea {
+        width: 80%;
+      }
+      .email-form>button{
+        width: 40%;
+        height: 6%;
+        left: 23%;
+        font-size: 12px;
+      }
+      .links{
+        width: 90%;
+        height: 80%;
+      }
+      .links img{
+        width: 30px;
+        height: 30px;
+      }
+      .links>div>img{
+        top: 35%;
+        left: 8%;
+      }
+      .links>div>a{
+        top: 15%;
+        left: 12%;
+        font-size: 13px;
+      }
+      .links>div>p{
+        position: relative;
+        top: -5%;
+        bottom: 0;
+        left: 6%;
+        font-size: 13px;
+      }
+      .links>div:last-child>a{
+        top: -50%;
+        left: 20%;
       }
     }
     @media all and (max-width: 425px) {
@@ -493,21 +797,124 @@
       .skill>label{
         font-size: 15px;
       }
-      .using-skill{
-        grid-template-columns: repeat(3,1fr);
-        height: 40%;
-      }
-      .skill>section>div>img {
+      .skill>section>div img {
         width: 80px;
         height: 80px;
         bottom: 60px;
       }
-      .skill>section>div>label{
+      .skill>section>div label{
         font-size: 15px;
       }
       .learning-skill{
         width: 90%;
         height: 20%;
+      }
+      /*--------- education section ----------*/
+      .education>div:first-child{
+        width: 30%;
+        height: 5%;
+        border: 4px solid black;
+        font-size: 17px;
+      }
+
+      /*--------- project section ----------*/
+      .project>div:first-child{
+        width: 30%;
+        height: 5%;
+        border: 4px solid black;
+        font-size: 17px;
+      }
+      .project>section{
+        height: 80%;
+        grid-template-columns: 1fr;
+      }
+      .front-content>label{
+        font-size: 14px;
+      }
+      .front-content>p{
+        font-size: 10px;
+      }
+      .code-p{
+        left: 60%;
+        top: 50%;
+      }
+      .git-ico{
+        top: 65%;
+        left: 60%;
+      }
+
+      /*--------- gallery section ----------*/
+      .gallery>div:first-child{
+        width: 30%;
+        height: 5%;
+        border: 4px solid black;
+        font-size: 17px;
+      }
+      .photo-section {
+        width: 85%;
+        height: 55%;
+        top: 100px;
+      }
+
+      /*--------- contact section ----------*/
+      .contact>div:first-child{
+        width: 30%;
+        height: 5%;
+        border: 4px solid black;
+        font-size: 17px;
+      }
+      .contact>section{
+        grid-template-columns: 1fr;
+        height: 85%;
+      }
+      .email-form{
+        left: 5%;
+      }
+      .email-form>label:first-child{
+        font-size: 14px;
+      }
+      .email-form>label{
+        font-size: 11px;
+      }
+      .contact input[type="text"]{
+        width: 80%;
+      }
+      .email-form>textarea {
+        width: 80%;
+      }
+      .email-form>button{
+        width: 40%;
+        height: 6%;
+        left: 23%;
+        font-size: 12px;
+      }
+      .links{
+        width: 90%;
+        height: 80%;
+      }
+      .links img{
+        width: 25px;
+        height: 25px;
+      }
+      .links>div>img{
+        top: 38%;
+        left: 8%;
+      }
+      .links>div>a{
+        top: 15%;
+        left: 12%;
+        font-size: 12px;
+      }
+      .links>div>p{
+        position: relative;
+        top: -5%;
+        bottom: 0;
+        left: 6%;
+        font-size: 12px;
+      }
+      .links>div:last-child>a{
+        top: -80%;
+        left: 17%;
       }
     }
   </style>
@@ -699,7 +1106,7 @@
               <p><strong>Using Languages</strong></p>
               <p>Frontend : Java Fx</p>
               <p>Backend  : Java</p><br>
-              <p><strong>Code</strong></p>
+              <p class="code-p"><strong>Code</strong></p>
               <a class="git-ico"><i class="fa-brands fa-github fa-2xl"></i></a>
             </div>
           </div>
@@ -719,7 +1126,7 @@
               <p>Frontend : Java Fx</p>
               <p>Backend  : Java</p>
               <p>Database : MySql</p>
-              <p><strong>Code</strong></p>
+              <p class="code-p"><strong>Code</strong></p>
               <a class="git-ico"><i class="fa-brands fa-github fa-2xl"></i></a>
             </div>
           </div>
@@ -731,12 +1138,12 @@
   <main id="gallery" class="gallery">
     <div data-aos="fade-down">Gallery</div>
     <section class="photo-section">
-      <div class="first-photos" data-aos="fade-up-right">
-        <img src="https://picsum.photos/id/815/400/400" alt="Two hands creating a heart and showing the sun">
-        <img src="https://picsum.photos/id/872/400/400" alt="The mountain">
-        <img src="https://picsum.photos/id/603/400/400" alt="a river">
-        <img src="https://picsum.photos/id/823/400/400" alt="a women with a camera">
-      </div>
+<!--      <div class="first-photos" data-aos="fade-up-right">-->
+<!--        <img src="https://picsum.photos/id/815/400/400" alt="Two hands creating a heart and showing the sun">-->
+<!--        <img src="https://picsum.photos/id/872/400/400" alt="The mountain">-->
+<!--        <img src="https://picsum.photos/id/603/400/400" alt="a river">-->
+<!--        <img src="https://picsum.photos/id/823/400/400" alt="a women with a camera">-->
+<!--      </div>-->
       <div class="middle-photos" data-aos="fade-up-left">
         <ul class="results">
           <li class="result">

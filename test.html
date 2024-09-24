@@ -5,143 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Advanced Image Carousel</title>
   <style>
-    * {
-      box-sizing: border-box;
+    section{
+      margin:0;
+      height:100vh;
+      display:grid;
+      place-items:center;
+      background-color:#010101;
     }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+
+    .gallery{
+      position:relative;
+      width:300px;
+      height:400px;
+      transform-style:preserve-3d;
+      animation:rotate 35s linear infinite;
     }
-    .carousel {
-      position: relative;
-      max-width: 100%;
-      margin: auto;
-      overflow: hidden;
+
+    @keyframes rotate{
+      from{
+        transform:perspective(1200px) rotateY(0deg);
+      }
+
+      to{
+        transform:perspective(1200px) rotateY(360deg);
+      }
     }
-    .carousel-images {
-      position: relative;
-      width: 100%;
+
+    .gallery span{
+      position:absolute;
+      width:100%;
+      height:100%;
+      transform-origin:center;
+      transform-style:preserve-3d;
+      transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
     }
-    .carousel-images img {
-      width: 100%;
-      height: auto;
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: opacity 1s ease-in-out;
-    }
-    .carousel-images img.active {
-      opacity: 1;
-      position: relative;
-    }
-    .prev, .next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      padding: 10px;
-      cursor: pointer;
-    }
-    .prev {
-      left: 10px;
-    }
-    .next {
-      right: 10px;
-    }
-    .dots {
-      text-align: center;
-      margin-top: 10px;
-    }
-    .dots span {
-      height: 15px;
-      width: 15px;
-      margin: 0 5px;
-      display: inline-block;
-      background-color: #bbb;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    .active-dot {
-      background-color: #717171;
+
+    .gallery span img{
+      position:absolute;
+      width:100%;
+      height:100%;
+      object-fit:cover;
     }
   </style>
 </head>
 <body>
 
-<div class="carousel" id="carousel">
-  <div class="carousel-images">
-    <img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1" class="active">
-    <img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2">
-    <img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3">
+<section>
+  <div class="gallery">
+  <span style="--i:1">
+    <img src="/image/gallery/IMG-20240828-WA0348.jpg" alt="" />
+  </span>
+    <span style="--i:2">
+    <img src="/image/gallery/IMG-20240309-WA0038.jpg" alt="" />
+  </span>
+    <span style="--i:3">
+    <img src="/image/gallery/IMG-20240510-WA0036.jpg" alt="" />
+  </span>
+    <span style="--i:4">
+    <img src="/image/gallery/IMG-20240828-WA0179.jpg" alt="" />
+  </span>
+    <span style="--i:5">
+    <img src="/image/gallery/IMG_0596_2.jpg" alt="" />
+  </span>
+    <span style="--i:6">
+    <img src="/image/gallery/Polish_20240614_215121149.jpg" alt="" />
+  </span>
+    <span style="--i:7">
+    <img src="/image/gallery/PXL_20240217_005307284.PORTRAIT-1.jpg" alt="" />
+  </span>
+    <span style="--i:8">
+    <img src="/image/gallery/IMG_0375%20(1).jpg" alt="" />
+  </span>
   </div>
-  <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-  <div class="next" onclick="plusSlides(1)">&#10095;</div>
-</div>
-
-<div class="dots">
-  <span class="dot active-dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-<script>
-  let slideIndex = 1;
-  let autoScroll;
-
-  function showSlides(n) {
-    const slides = document.getElementsByClassName("carousel-images")[0].getElementsByTagName("img");
-    const dots = document.getElementsByClassName("dot");
-
-    if (n > slides.length) slideIndex = 1;
-    if (n < 1) slideIndex = slides.length;
-
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active");
-      dots[i].classList.remove("active-dot");
-    }
-
-    slides[slideIndex - 1].classList.add("active");
-    dots[slideIndex - 1].classList.add("active-dot");
-  }
-
-  function plusSlides(n) {
-    slideIndex += n;
-    showSlides(slideIndex);
-    resetAutoScroll();
-  }
-
-  function currentSlide(n) {
-    slideIndex = n;
-    showSlides(slideIndex);
-    resetAutoScroll();
-  }
-
-  function autoSlide() {
-    slideIndex++;
-    showSlides(slideIndex);
-  }
-
-  function resetAutoScroll() {
-    clearInterval(autoScroll);
-    autoScroll = setInterval(autoSlide, 3000); // auto-scroll every 3 seconds
-  }
-
-  document.getElementById('carousel').addEventListener('mouseenter', () => {
-    clearInterval(autoScroll); // pause auto-scroll on hover
-  });
-
-  document.getElementById('carousel').addEventListener('mouseleave', () => {
-    resetAutoScroll(); // resume auto-scroll on mouse leave
-  });
-
-  // Initialize
-  showSlides(slideIndex);
-  autoScroll = setInterval(autoSlide, 3000); // Start auto-scroll
-
-</script>
-
+</section>
 </body>
 </html>

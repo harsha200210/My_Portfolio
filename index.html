@@ -159,6 +159,13 @@
         border: 4px solid black;
         font-size: 25px;
       }
+      .gallery-photos span{
+        transform:rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+      }
+      .gallery-photos{
+        height: 350px;
+        width: 275px;
+      }
 
       /*--------- contact section ----------*/
       .contact>div:first-child{
@@ -378,7 +385,13 @@
       .photo-section {
         width: 80%;
         height: 60%;
-        top: 100px;
+      }
+      .gallery-photos span{
+        transform:rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+      }
+      .gallery-photos{
+        height: 350px;
+        width: 200px;
       }
 
       /*--------- contact section ----------*/
@@ -545,6 +558,9 @@
         font-size: 11px;
       }
       /*--------- skills section ----------*/
+      .skill{
+        height: 80vh;
+      }
       .skill>div:first-child{
         width: 25%;
         height: 6%;
@@ -570,6 +586,9 @@
       }
 
       /*--------- education section ----------*/
+      .education{
+        height: 75vh;
+      }
       .education>div:first-child{
         width: 25%;
         height: 6%;
@@ -618,6 +637,9 @@
       }
 
       /*--------- gallery section ----------*/
+      .gallery{
+        height: 55vh;
+      }
       .gallery>div:first-child{
         width: 25%;
         height: 6%;
@@ -627,10 +649,20 @@
       .photo-section {
         width: 80%;
         height: 55%;
-        top: 100px;
+        top: 65px;
+      }
+      .gallery-photos span{
+        transform:rotateY(calc(var(--i) * 60deg)) translateZ(150px);
+      }
+      .gallery-photos{
+        height: 250px;
+        width: 160px;
       }
 
       /*--------- contact section ----------*/
+      .contact{
+        height: 120vh;
+      }
       .contact>div:first-child{
         width: 25%;
         height: 6%;
@@ -639,7 +671,7 @@
       }
       .contact>section{
         grid-template-columns: 1fr;
-        height: 85%;
+        height: 80%;
       }
       .email-form{
         left: 5%;
@@ -665,6 +697,7 @@
       .links{
         width: 90%;
         height: 80%;
+        top: 17%;
       }
       .links img{
         width: 30px;
@@ -809,6 +842,9 @@
       }
 
       /*--------- skills section ----------*/
+      .skill{
+        height: 70vh;
+      }
       .skill>div:first-child{
         width: 30%;
         height: 5%;
@@ -829,8 +865,12 @@
       .learning-skill{
         width: 90%;
         height: 20%;
+        top: 220px;
       }
       /*--------- education section ----------*/
+      .education{
+        height: 60vh;
+      }
       .education>div:first-child{
         width: 30%;
         height: 5%;
@@ -879,6 +919,9 @@
       }
 
       /*--------- gallery section ----------*/
+      .gallery{
+        height: 50vh;
+      }
       .gallery>div:first-child{
         width: 30%;
         height: 5%;
@@ -888,7 +931,14 @@
       .photo-section {
         width: 85%;
         height: 55%;
-        top: 100px;
+        top: 60px;
+      }
+      .gallery-photos span{
+        transform:rotateY(calc(var(--i) * 60deg)) translateZ(120px);
+      }
+      .gallery-photos{
+        height: 220px;
+        width: 125px;
       }
 
       /*--------- contact section ----------*/
@@ -1172,52 +1222,32 @@
 
   <main id="gallery" class="gallery">
     <div data-aos="fade-down">Gallery</div>
-    <section class="photo-section">
-<!--      <div class="first-photos" data-aos="fade-up-right">-->
-<!--        <img src="https://picsum.photos/id/815/400/400" alt="Two hands creating a heart and showing the sun">-->
-<!--        <img src="https://picsum.photos/id/872/400/400" alt="The mountain">-->
-<!--        <img src="https://picsum.photos/id/603/400/400" alt="a river">-->
-<!--        <img src="https://picsum.photos/id/823/400/400" alt="a women with a camera">-->
-<!--      </div>-->
-      <div class="middle-photos" data-aos="fade-up-left">
-        <ul class="results">
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3MQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1551978429-3dbfed5cacc9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3NA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3Nw&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1523437237164-d442d57cc3c9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE3OA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1494625927555-6ec4433b1571?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4Mw&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1600240644455-3edc55c375fe?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4NQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1435732960391-11053ee5e6b6?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE4OQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1518717202715-9fa9d099f58a?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5MQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1484318571209-661cf29a69c3?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5NA&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5Ng&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-          <li class="result">
-            <a href="#"><img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;h=500&amp;ixid=MnwxfDB8MXxyYW5kb218MHx8bGFuZHNjYXBlfHx8fHx8MTY2MjEyMDE5OQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;utm_campaign=api-credit&amp;utm_medium=referral&amp;utm_source=unsplash_source&amp;w=500" width="500" height="500" alt=""></a>
-          </li>
-        </ul>
+    <section class="photo-section" data-aos="fade-up">
+      <div class="gallery-photos">
+        <span style="--i:1">
+          <img src="/image/gallery/IMG-20240828-WA0348.jpg" alt="" />
+        </span>
+              <span style="--i:2">
+          <img src="/image/gallery/IMG-20240309-WA0038.jpg" alt="" />
+        </span>
+              <span style="--i:3">
+          <img src="/image/gallery/IMG-20240510-WA0036.jpg" alt="" />
+        </span>
+              <span style="--i:4">
+          <img src="/image/gallery/IMG-20240828-WA0179.jpg" alt="" />
+        </span>
+              <span style="--i:5">
+          <img src="/image/gallery/IMG_0596_2.jpg" alt="" />
+        </span>
+              <span style="--i:6">
+          <img src="/image/gallery/Polish_20240614_215121149.jpg" alt="" />
+        </span>
+              <span style="--i:7">
+          <img src="/image/gallery/PXL_20240217_005307284.PORTRAIT-1.jpg" alt="" />
+        </span>
+              <span style="--i:8">
+          <img src="/image/gallery/IMG_0375%20(1).jpg" alt="" />
+        </span>
       </div>
     </section>
   </main>

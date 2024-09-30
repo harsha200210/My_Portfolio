@@ -1060,39 +1060,39 @@ p {
 /*  place-items:center;*/
 /*}*/
 
-.gallery-photos{
-  position:relative;
-  width:300px;
-  height:400px;
-  transform-style:preserve-3d;
-  animation:rotate 35s linear infinite;
-}
+/*.gallery-photos{*/
+/*  position:relative;*/
+/*  width:300px;*/
+/*  height:400px;*/
+/*  transform-style:preserve-3d;*/
+/*  animation:rotate 35s linear infinite;*/
+/*}*/
 
-@keyframes rotate{
-  from{
-    transform:perspective(1200px) rotateY(0deg);
-  }
+/*@keyframes rotate{*/
+/*  from{*/
+/*    transform:perspective(1200px) rotateY(0deg);*/
+/*  }*/
 
-  to{
-    transform:perspective(1200px) rotateY(360deg);
-  }
-}
+/*  to{*/
+/*    transform:perspective(1200px) rotateY(360deg);*/
+/*  }*/
+/*}*/
 
-.gallery-photos span{
-  position:absolute;
-  width:100%;
-  height:100%;
-  transform-origin:center;
-  transform-style:preserve-3d;
-  transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
-}
+/*.gallery-photos span{*/
+/*  position:absolute;*/
+/*  width:100%;*/
+/*  height:100%;*/
+/*  transform-origin:center;*/
+/*  transform-style:preserve-3d;*/
+/*  transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);*/
+/*}*/
 
-.gallery-photos span img{
-  position:absolute;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
+/*.gallery-photos span img{*/
+/*  position:absolute;*/
+/*  width:100%;*/
+/*  height:100%;*/
+/*  object-fit:cover;*/
+/*}*/
 
 .photo-section{
   width: 90%;
@@ -1110,21 +1110,20 @@ p {
 }
 
 .line-1{
-  animation: animate-slider 35s infinite reverse;
+  animation: animate-slider 35s infinite alternate-reverse;
 }
 
 .line-2{
-  animation: animate-slider 35s infinite normal;
+  animation: animate-slider 35s infinite alternate;
 }
 
 .line-3{
-  animation: animate-slider 35s infinite reverse;
+  animation: animate-slider 35s infinite alternate-reverse;
 }
 
 .photo-line>div{
   width: 25vw;
   height: 70vh;
-  background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
   background-position: center;
   background-size: cover;
   display: block;
@@ -1139,9 +1138,11 @@ p {
 
 .line-1>div:first-child{
   background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
+  background-position: top;
 }
 .line-1>div:nth-child(2){
   background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
+  background-position: top;
 }
 .line-1>div:nth-child(3){
   background-image: url("/image/gallery/Polish_20240614_215121149.jpg");
@@ -1155,9 +1156,11 @@ p {
 
 .line-2>div:first-child{
   background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
+  background-position: top;
 }
 .line-2>div:nth-child(2){
   background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
+  background-position: top;
 }
 .line-2>div:nth-child(3){
   background-image: url("/image/gallery/Polish_20240614_215121149.jpg");
@@ -1171,9 +1174,11 @@ p {
 
 .line-3>div:first-child{
   background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
+  background-position: top;
 }
 .line-3>div:nth-child(2){
   background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
+  background-position: top;
 }
 .line-3>div:nth-child(3){
   background-image: url("/image/gallery/Polish_20240614_215121149.jpg");
@@ -1183,6 +1188,7 @@ p {
 }
 .line-3>div:nth-child(5){
   background-image: url("/image/gallery/IMG_0596_2.jpg");
+  background-position: top;
 }
 
 @keyframes animate-slider {
@@ -1201,33 +1207,6 @@ p {
   83%,100%{
     transform: translateY(calc(-70vh * 4));
   }
-  /*0%,9%{*/
-  /*  transform: translateY(0);*/
-  /*}*/
-  /*11%,20%{*/
-  /*  transform: translateY(-70vh);*/
-  /*}*/
-  /*22%,31%{*/
-  /*  transform: translateY(calc(-70vh * 2));*/
-  /*}*/
-  /*33%,42%{*/
-  /*  transform: translateY(calc(-70vh * 3));*/
-  /*}*/
-  /*44%,53%{*/
-  /*  transform: translateY(calc(-70vh * 4));*/
-  /*}*/
-  /*58%,67%{*/
-  /*  transform: translateY(calc(-70vh * 3));*/
-  /*}*/
-  /*69%,78%{*/
-  /*  transform: translateY(calc(-70vh * 2));*/
-  /*}*/
-  /*80%,89%{*/
-  /*  transform: translateY(-70vh);*/
-  /*}*/
-  /*91%,100%{*/
-  /*  transform: translateY(0);*/
-  /*}*/
 }
 
   /*------------ contact section ---------*/

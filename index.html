@@ -140,7 +140,7 @@
         font-size: 25px;
       }
       .project>section{
-        height: 60%;
+        height: 75%;
       }
       .front-content>label{
         font-size: 20px;
@@ -159,12 +159,42 @@
         border: 4px solid black;
         font-size: 25px;
       }
-      .gallery-photos span{
-        transform:rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+      .photo-section{
+        height: 60%;
+        gap: 20px;
+        top: 120px;
       }
-      .gallery-photos{
-        height: 350px;
-        width: 275px;
+      .photo-line>div {
+        width: 26vw;
+        height: 60vh;
+      }
+      @keyframes animate-slider-920 {
+        0%,17%{
+          transform: translateY(0);
+        }
+        20%,37%{
+          transform: translateY(-60vh);
+        }
+        41%,58%{
+          transform: translateY(calc(-60vh * 2));
+        }
+        62%,79%{
+          transform: translateY(calc(-60vh * 3));
+        }
+        83%,100%{
+          transform: translateY(calc(-60vh * 4));
+        }
+      }
+      .line-1{
+        animation: animate-slider-920 35s infinite alternate-reverse;
+      }
+
+      .line-2{
+        animation: animate-slider-920 35s infinite alternate;
+      }
+
+      .line-3{
+        animation: animate-slider-920 35s infinite alternate-reverse;
       }
 
       /*--------- contact section ----------*/
@@ -335,6 +365,9 @@
       }
 
       /*--------- education section ----------*/
+      .education{
+        height: 85vh;
+      }
       .education>div:first-child{
         width: 20%;
         height: 6%;
@@ -350,6 +383,9 @@
       }
 
       /*--------- project section ----------*/
+      .project{
+        height: 150vh;
+      }
       .project>div:first-child{
         width: 20%;
         height: 6%;
@@ -376,22 +412,59 @@
       }
 
       /*--------- gallery section ----------*/
+      .gallery{
+        height: 189vh;
+      }
       .gallery>div:first-child{
         width: 20%;
-        height: 6%;
+        height: 4%;
         border: 4px solid black;
         font-size: 22px;
       }
-      .photo-section {
-        width: 80%;
-        height: 60%;
+      .photo-section{
+        height: 90%;
+        width: 60%;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        top: 100px;
       }
-      .gallery-photos span{
-        transform:rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+      .photo-line{
+        display: flex;
       }
-      .gallery-photos{
-        height: 350px;
-        width: 200px;
+      .photo-line>div {
+        width: 60vw;
+        height: 50vh;
+      }
+      @keyframes animate-slider-650 {
+        0%,17%{
+          transform: translateX(0);
+        }
+        20%,37%{
+          transform: translateX(-60vw);
+        }
+        41%,58%{
+          transform: translateX(calc(-60vw * 2));
+        }
+        62%,79%{
+          transform: translateX(calc(-60vw * 3));
+        }
+        83%,100%{
+          transform: translateX(calc(-60vw * 4));
+        }
+      }
+      .line-1{
+        animation: animate-slider-650 35s infinite alternate-reverse;
+        /*animation: none;*/
+      }
+
+      .line-2{
+        animation: animate-slider-650 35s infinite alternate;
+        /*animation: none;*/
+      }
+
+      .line-3{
+        animation: animate-slider-650 35s infinite alternate-reverse;
+        /*animation: none;*/
       }
 
       /*--------- contact section ----------*/
@@ -587,11 +660,11 @@
 
       /*--------- education section ----------*/
       .education{
-        height: 75vh;
+        height: 50vh;
       }
       .education>div:first-child{
         width: 25%;
-        height: 6%;
+        height: 10%;
         border: 4px solid black;
         font-size: 19px;
       }
@@ -638,25 +711,58 @@
 
       /*--------- gallery section ----------*/
       .gallery{
-        height: 55vh;
+        height: 150vh;
       }
       .gallery>div:first-child{
         width: 25%;
-        height: 6%;
+        height: 3%;
         border: 4px solid black;
         font-size: 19px;
       }
-      .photo-section {
-        width: 80%;
-        height: 55%;
-        top: 65px;
+      .photo-section{
+        height: 85%;
+        width: 60%;
+        gap: 0;
+        grid-template-columns: 1fr;
+        top: 80px;
       }
-      .gallery-photos span{
-        transform:rotateY(calc(var(--i) * 60deg)) translateZ(150px);
+      .photo-line{
+        display: flex;
       }
-      .gallery-photos{
-        height: 250px;
-        width: 160px;
+      .photo-line>div {
+        width: 60vw;
+        height: 40vh;
+      }
+      @keyframes animate-slider-426 {
+        0%,17%{
+          transform: translateX(0);
+        }
+        20%,37%{
+          transform: translateX(-60vw);
+        }
+        41%,58%{
+          transform: translateX(calc(-60vw * 2));
+        }
+        62%,79%{
+          transform: translateX(calc(-60vw * 3));
+        }
+        83%,100%{
+          transform: translateX(calc(-60vw * 4));
+        }
+      }
+      .line-1{
+        animation: animate-slider-426 35s infinite alternate-reverse;
+        /*animation: none;*/
+      }
+
+      .line-2{
+        animation: animate-slider-426 35s infinite alternate;
+        /*animation: none;*/
+      }
+
+      .line-3{
+        animation: animate-slider-426 35s infinite alternate-reverse;
+        /*animation: none;*/
       }
 
       /*--------- contact section ----------*/
@@ -720,7 +826,7 @@
         font-size: 13px;
       }
       .links>div:last-child>a{
-        top: -80%;
+        top: -55%;
         left: 20%;
       }
     }
@@ -920,25 +1026,59 @@
 
       /*--------- gallery section ----------*/
       .gallery{
-        height: 50vh;
+        height: 130vh;
       }
       .gallery>div:first-child{
         width: 30%;
-        height: 5%;
+        height: 3%;
         border: 4px solid black;
         font-size: 17px;
       }
-      .photo-section {
-        width: 85%;
-        height: 55%;
-        top: 60px;
+      .photo-section{
+        height: 90%;
+        width: 60%;
+        gap: 0;
+        grid-template-columns: 1fr;
+        top: 80px;
       }
-      .gallery-photos span{
-        transform:rotateY(calc(var(--i) * 60deg)) translateZ(120px);
+      .photo-line{
+        display: flex;
       }
-      .gallery-photos{
-        height: 220px;
-        width: 125px;
+      .photo-line>div {
+        width: 60vw;
+        height: 35vh;
+        z-index: 3;
+      }
+      @keyframes animate-slider-426 {
+        0%,17%{
+          transform: translateX(0);
+        }
+        20%,37%{
+          transform: translateX(-60vw);
+        }
+        41%,58%{
+          transform: translateX(calc(-60vw * 2));
+        }
+        62%,79%{
+          transform: translateX(calc(-60vw * 3));
+        }
+        83%,100%{
+          transform: translateX(calc(-60vw * 4));
+        }
+      }
+      .line-1{
+        animation: animate-slider-426 35s infinite alternate-reverse;
+        /*animation: none;*/
+      }
+
+      .line-2{
+        animation: animate-slider-426 35s infinite alternate;
+        /*animation: none;*/
+      }
+
+      .line-3{
+        animation: animate-slider-426 35s infinite alternate-reverse;
+        /*animation: none;*/
       }
 
       /*--------- contact section ----------*/

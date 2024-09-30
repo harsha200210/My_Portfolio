@@ -1047,18 +1047,18 @@ p {
   font-weight: bold;
 }
 
-.photo-section{
-  width: 90%;
-  height: 70%;
-  position: relative;
-  top: 50px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  display:grid;
-  place-items:center;
-}
+/*.photo-section{*/
+/*  width: 90%;*/
+/*  height: 70%;*/
+/*  position: relative;*/
+/*  top: 50px;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+/*  margin: auto;*/
+/*  display:grid;*/
+/*  place-items:center;*/
+/*}*/
 
 .gallery-photos{
   position:relative;
@@ -1094,7 +1094,143 @@ p {
   object-fit:cover;
 }
 
-/*------------ contact section ---------*/
+.photo-section{
+  width: 90%;
+  height: 70%;
+  position: relative;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 40px;
+  overflow: hidden;
+}
+
+.line-1{
+  animation: animate-slider 35s infinite reverse;
+}
+
+.line-2{
+  animation: animate-slider 35s infinite normal;
+}
+
+.line-3{
+  animation: animate-slider 35s infinite reverse;
+}
+
+.photo-line>div{
+  width: 25vw;
+  height: 70vh;
+  background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
+  background-position: center;
+  background-size: cover;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 10%;
+}
+
+.line-1>div:first-child{
+  background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
+}
+.line-1>div:nth-child(2){
+  background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
+}
+.line-1>div:nth-child(3){
+  background-image: url("/image/gallery/Polish_20240614_215121149.jpg");
+}
+.line-1>div:nth-child(4){
+  background-image: url("/image/gallery/IMG-20240828-WA0348.jpg");
+}
+.line-1>div:nth-child(5){
+  background-image: url("/image/gallery/Picsart_24-02-20_10-34-29-447.png");
+}
+
+.line-2>div:first-child{
+  background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
+}
+.line-2>div:nth-child(2){
+  background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
+}
+.line-2>div:nth-child(3){
+  background-image: url("/image/gallery/Polish_20240614_215121149.jpg");
+}
+.line-2>div:nth-child(4){
+  background-image: url("/image/gallery/IMG-20240828-WA0348.jpg");
+}
+.line-2>div:nth-child(5){
+  background-image: url("/image/gallery/PXL_20240217_005307284.PORTRAIT-1.jpg");
+}
+
+.line-3>div:first-child{
+  background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
+}
+.line-3>div:nth-child(2){
+  background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
+}
+.line-3>div:nth-child(3){
+  background-image: url("/image/gallery/Polish_20240614_215121149.jpg");
+}
+.line-3>div:nth-child(4){
+  background-image: url("/image/gallery/IMG-20240828-WA0348.jpg");
+}
+.line-3>div:nth-child(5){
+  background-image: url("/image/gallery/IMG_0596_2.jpg");
+}
+
+@keyframes animate-slider {
+  0%,17%{
+    transform: translateY(0);
+  }
+  20%,37%{
+    transform: translateY(-70vh);
+  }
+  41%,58%{
+    transform: translateY(calc(-70vh * 2));
+  }
+  62%,79%{
+    transform: translateY(calc(-70vh * 3));
+  }
+  83%,100%{
+    transform: translateY(calc(-70vh * 4));
+  }
+  /*0%,9%{*/
+  /*  transform: translateY(0);*/
+  /*}*/
+  /*11%,20%{*/
+  /*  transform: translateY(-70vh);*/
+  /*}*/
+  /*22%,31%{*/
+  /*  transform: translateY(calc(-70vh * 2));*/
+  /*}*/
+  /*33%,42%{*/
+  /*  transform: translateY(calc(-70vh * 3));*/
+  /*}*/
+  /*44%,53%{*/
+  /*  transform: translateY(calc(-70vh * 4));*/
+  /*}*/
+  /*58%,67%{*/
+  /*  transform: translateY(calc(-70vh * 3));*/
+  /*}*/
+  /*69%,78%{*/
+  /*  transform: translateY(calc(-70vh * 2));*/
+  /*}*/
+  /*80%,89%{*/
+  /*  transform: translateY(-70vh);*/
+  /*}*/
+  /*91%,100%{*/
+  /*  transform: translateY(0);*/
+  /*}*/
+}
+
+  /*------------ contact section ---------*/
 
 .contact{
   width: 100vw;

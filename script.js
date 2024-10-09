@@ -19,3 +19,19 @@ function closeFormAssignment4() {
   document.getElementById("myForm1").style.display = "none";
   document.getElementsByClassName("open-button")[1].style.display = "block";
 }
+
+function myFunction(x) {
+  x.classList.toggle("change");
+
+  var menuDiv = document.getElementsByClassName("menu-div")[0];
+
+  if (menuDiv.style.display === "grid") {
+    menuDiv.style.display = "none";
+  } else {
+    menuDiv.style.display = "grid";
+  }
+}
+
+function upToPage(){
+  window.scroll(0,0);
+}

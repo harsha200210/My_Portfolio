@@ -75,17 +75,55 @@
     </div>
   </main>
 
-  <img class="menu-image" src="icon/menu_icon.png" alt="menu">
+  <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <div class="menu-div">
+    <div>
+      <img width="30" height="30" src="https://img.icons8.com/material-rounded/48/info.png" alt="info"/>
+      <a href="#about">About</a>
+    </div>
+    <div>
+      <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/popular-woman.png" alt="popular-woman"/>
+      <a href="#skill">Skills</a>
+    </div>
+    <div>
+      <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/education.png" alt="education"/>
+      <a href="#education">Education</a>
+    </div>
+    <div>
+      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/signing-a-document.png" alt="signing-a-document"/>
+      <a href="#assignment">Assignments</a>
+    </div>
+    <div>
+      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/group-of-projects.png" alt="group-of-projects"/>
+      <a href="#project">Projects</a>
+    </div>
+    <div>
+      <img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/50/gallery.png" alt="gallery"/>
+      <a href="#gallery">Gallery</a>
+    </div>
+    <div>
+      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/contact-card.png" alt="contact-card"/>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
   <div class="navbar">
     <ul>
       <li id="link"><a href="#about">About me</a></li>
       <li><a href="#skill">Skills</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#assignment">Assignment</a></li>
       <li><a href="#project">Project</a></li>
       <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact" class="contact-nav">Contact Me</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
+
+  <div class="up-btn" onclick="upToPage()"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-chevron-up.png" alt="circled-chevron-up"/></div>
 
   <main class="about" id="about">
     <div data-aos="fade-down">About me</div>
@@ -115,9 +153,6 @@
         <p>I offer ongoing website support and maintenance to keep your site updated, secure, and running smoothly, allowing you to focus on growing your business.</p>
       </div>
     </section>
-    <!--    <div class="backgroundImage">-->
-    <!--      <img src="icon/web-programming.png" alt="background design image">-->
-    <!--    </div>-->
   </main>
 
   <main id="skill" class="skill">
@@ -206,7 +241,7 @@
   <main id="assignment" class="assignment">
     <div data-aos="fade-down">Assignment</div>
     <section class="assignment-cards">
-      <div class="assignment-1">
+      <div class="assignment-1" data-aos="fade-down-right">
         <label>Assignment 01</label>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deserunt error et exercitationem explicabo ipsam, iste itaque laborum magni nisi optio quisquam quod rem suscipit totam voluptas. Fugit, obcaecati?</p>
         <a>
@@ -215,7 +250,7 @@
         <button>Demo</button>
         <button>Code</button>
       </div>
-      <div class="assignment-2">
+      <div class="assignment-2" data-aos="fade-down-left">
         <label>Assignment 02</label>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eligendi officiis quia quos similique tempora, tenetur! Accusamus ad culpa dolorum enim ex, maxime nesciunt odit quam, suscipit, tempore tenetur.</p>
         <a>
@@ -224,7 +259,7 @@
         <button>Demo</button>
         <button>Code</button>
       </div>
-      <div class="assignment-3">
+      <div class="assignment-3" data-aos="fade-up-right">
         <label>Assignment 03</label>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eligendi officiis quia quos similique tempora, tenetur! Accusamus ad culpa dolorum enim ex, maxime nesciunt odit quam, suscipit, tempore tenetur.</p>
         <a>
@@ -270,7 +305,7 @@
           </form>
         </div>
       </div>
-      <div class="assignment-4">
+      <div class="assignment-4" data-aos="fade-up-left">
         <label>Assignment 04</label>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eligendi officiis quia quos similique tempora, tenetur! Accusamus ad culpa dolorum enim ex, maxime nesciunt odit quam, suscipit, tempore tenetur.</p>
         <a>

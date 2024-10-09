@@ -37,8 +37,8 @@
   }
   .navbar ul li a {
     font-size: 14px;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .right-section-content>img{
     width: 80%;
@@ -300,15 +300,15 @@
   }
   .navbar{
     top: 30px;
-    right: 20px;
+    right: 10px;
   }
   .navbar ul {
     gap: 0;
   }
   .navbar ul li a {
     font-size: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .right-section-content>img{
     height: 80vh;
@@ -585,6 +585,15 @@
   }
 }
 
+@media all and (max-width: 700px) and (min-width: 650px) {
+  .navbar{
+    display: none;
+  }
+  .container{
+    display: inline-block;
+  }
+}
+
 @media all and (max-width: 649px) and (min-width: 426px) {
   /*--------- hero section ----------*/
   .left-section{
@@ -629,22 +638,24 @@
     top: 4px;
   }
   .navbar{
-    top: -30px;
-    right: -70px;
     display: none;
   }
-  .menu-image{
-    display: flex;
-    width: 10%;
+  .container{
+    display: inline-block;
   }
-  .navbar ul {
-    display: none;
-    gap: 0;
+  .bar1, .bar2, .bar3 {
+    width: 32px;
+    height: 4px;
+    margin: 5px 0;
   }
-  .navbar ul li a {
-    font-size: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+  .change .bar1 {
+    transform: translate(0, 9px) rotate(-45deg);
+  }
+  .change .bar3 {
+    transform: translate(0, -9px) rotate(45deg);
+  }
+  .menu-div{
+    width: 200px;
   }
   .right-section-content>img{
     width: 100%;
@@ -1001,21 +1012,24 @@
     top: 4px;
   }
   .navbar{
-    top: -30px;
-    right: -70px;
     display: none;
   }
-  .menu-image{
-    display: flex;
+  .container{
+    display: inline-block;
   }
-  .navbar ul {
-    display: none;
-    gap: 0;
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    margin: 4px 0;
   }
-  .navbar ul li a {
-    font-size: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
+  .change .bar1 {
+    transform: translate(0, 7px) rotate(-45deg);
+  }
+  .change .bar3 {
+    transform: translate(0, -7px) rotate(45deg);
+  }
+  .menu-div{
+    width: 190px;
   }
   .right-section-content>img{
     width: 100%;

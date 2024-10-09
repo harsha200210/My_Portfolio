@@ -47,6 +47,11 @@
     left: -130px;
   }
 
+  .up-btn{
+    width: 60px;
+    left: 93vw;
+  }
+
   /*--------- about section ----------*/
   .about>div:first-child{
     width: 20%;
@@ -316,6 +321,11 @@
   }
   .right-section-content {
     left: -140px;
+  }
+
+  .up-btn{
+    width: 50px;
+    left: 92vw;
   }
 
   /*--------- about section ----------*/
@@ -664,6 +674,11 @@
   }
   .right-section-content {
     left: -220px;
+  }
+
+  .up-btn{
+    width: 50px;
+    left: 90vw;
   }
 
   /*--------- about section ----------*/
@@ -1037,6 +1052,11 @@
   }
   .right-section-content {
     left: -250px;
+  }
+
+  .up-btn{
+    width: 45px;
+    left: 88vw;
   }
 
   /*--------- about section ----------*/

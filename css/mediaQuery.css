@@ -125,9 +125,11 @@
   .assignment-cards>div:hover{
     transform: scale(1.12);
   }
-  .assignment-1>button , .assignment-2>button{
-    height: 13%;
+  .assignment-1 button , .assignment-2 button{
     font-size: 18px;
+  }
+  .assignment-1>a:nth-child(4) , .assignment-2>a:nth-child(4) , .assignment-1>a:nth-child(5) , .assignment-2>a:nth-child(5){
+    height: 13%;
   }
   .assignment-cards>div>label:first-child{
     font-size: 23px;
@@ -142,10 +144,9 @@
   .btn-cancel {
     height: 84%;
   }
-  .demo , .code{
-    width: 30%;
-    height: 70%;
+  .form-container>div>a{
     font-size: 17px;
+    height: 70%;
   }
 
   /*--------- project section ----------*/
@@ -421,9 +422,11 @@
   .assignment-cards>div:hover{
     transform: scale(1.15);
   }
-  .assignment-1>button , .assignment-2>button{
-    height: 13%;
+  .assignment-1 button , .assignment-2 button{
     font-size: 18px;
+  }
+  .assignment-1>a:nth-child(4) , .assignment-2>a:nth-child(4) , .assignment-1>a:nth-child(5) , .assignment-2>a:nth-child(5){
+    height: 13%;
   }
   .assignment-cards>div>label:first-child{
     font-size: 20px;
@@ -438,15 +441,14 @@
   .btn-cancel {
     height: 85%;
   }
-  .demo , .code{
-    width: 30%;
-    height: 70%;
+  .form-container>div>a{
     font-size: 15px;
+    height: 70%;
   }
-  .code{
+  .form-container>div>a:nth-child(3){
     right: 6%;
   }
-  .demo{
+  .form-container>div>a:nth-child(2){
     right: 41%;
   }
   .form-container>div>label{
@@ -791,11 +793,11 @@
   .assignment-cards>div:hover{
     transform: scale(1.1);
   }
-  .assignment-1>button , .assignment-2>button{
-    height: 10%;
+  .assignment-1 button , .assignment-2 button{
     font-size: 15px;
   }
-  .assignment-1>button:nth-child(4) , .assignment-2>button:nth-child(4) , .assignment-1>button:nth-child(5) , .assignment-2>button:nth-child(5){
+  .assignment-1>a:nth-child(4) , .assignment-2>a:nth-child(4) , .assignment-1>a:nth-child(5) , .assignment-2>a:nth-child(5){
+    height: 10%;
     top: 84%;
   }
   .assignment-cards>div>label:first-child{
@@ -804,7 +806,7 @@
   .assignment-cards>div>p:nth-child(2) {
     font-size: 12px;
   }
-  .assignment-cards>div>a{
+  .assignment-cards>div>a:nth-child(3){
     font-size: 15px;
     top: 69%;
   }
@@ -820,15 +822,14 @@
     height: 87%;
     font-size: 15px;
   }
-  .demo , .code{
-    width: 30%;
-    height: 70%;
+  .form-container>div>a{
     font-size: 12px;
+    height: 70%;
   }
-  .code{
+  .form-container>div>a:nth-child(3){
     right: 2%;
   }
-  .demo{
+  .form-container>div>a:nth-child(2){
     right: 36%;
   }
   .form-container>div>label{
@@ -1179,11 +1180,11 @@
   .assignment-cards>div:hover{
     transform: scale(1.11);
   }
-  .assignment-1>button , .assignment-2>button{
-    height: 13%;
+  .assignment-1 button , .assignment-2 button{
     font-size: 14px;
   }
-  .assignment-1>button:nth-child(4) , .assignment-2>button:nth-child(4) , .assignment-1>button:nth-child(5) , .assignment-2>button:nth-child(5){
+  .assignment-1>a:nth-child(4) , .assignment-2>a:nth-child(4) , .assignment-1>a:nth-child(5) , .assignment-2>a:nth-child(5){
+    height: 13%;
     top: 82%;
   }
   .assignment-cards>div>label:first-child{
@@ -1192,7 +1193,7 @@
   .assignment-cards>div>p:nth-child(2) {
     font-size: 11px;
   }
-  .assignment-cards>div>a{
+  .assignment-cards>div>a:nth-child(3){
     font-size: 14px;
     top: 69%;
   }
@@ -1208,15 +1209,14 @@
     height: 89%;
     font-size: 14px;
   }
-  .demo , .code{
-    width: 30%;
+  .form-container>div>a{
     height: 70%;
     font-size: 12px;
   }
-  .code{
+  .form-container>div>a:nth-child(3){
     right: 5%;
   }
-  .demo{
+  .form-container>div>a:nth-child(2){
     right: 41%;
   }
   .form-container>div>label{

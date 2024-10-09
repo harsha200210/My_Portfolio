@@ -57,8 +57,8 @@ body {
 }
 
 .right-section-content>img{
-  width: 35vw;
-  height: 90vh;
+  width: 34vw;
+  height: 92vh;
   position: sticky;
 }
 
@@ -854,6 +854,194 @@ p {
   animation-delay: 2.4s;
 }
 
+
+/*------------ assignment section ---------*/
+
+.assignment{
+  width: 100vw;
+  height: 80vh;
+  background:radial-gradient(#D7D7D7 0%,white 150%);
+  overflow: hidden;
+  position: relative;
+}
+
+.assignment>div:first-child{
+  width: 20%;
+  height: 11%;
+  border: 8px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 40px;
+  margin: auto;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.assignment-cards{
+  width: 90%;
+  height: 60%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  bottom: 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.assignment-cards>div{
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.assignment-cards>div:hover{
+  transform: scale(1.15);
+}
+
+.assignment-1>button , .assignment-2>button{
+  width: 35%;
+  height: 10%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.assignment-cards>div>label:first-child{
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.assignment-cards>div>p:nth-child(2){
+  width: 80%;
+  font-size: 17px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.assignment-cards>div>a{
+  font-size: 17px;
+  text-decoration: underline;
+  font-weight: bold;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+
+.assignment-1>button:nth-child(4) , .assignment-2>button:nth-child(4){
+  background-color: #D7D7D7;
+  border: 1px solid black;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
+
+.assignment-1>button:nth-child(5) , .assignment-2>button:nth-child(5){
+  background-color: #0C090A;
+  color: white;
+  border: none;
+  position: absolute;
+  top: 80%;
+  right: 10%;
+}
+
+.assignment-3>button , .assignment-4>button{
+  width: 60%;
+  height: 10%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+.form-popup{
+  display: none;
+  width: 90%;
+  height: 85%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: white;
+}
+
+.form-container{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form-container>div{
+  position: relative;
+}
+.form-container>div:last-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-cancel{
+  width: 66%;
+  height: 75%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: red;
+  position: relative;
+  bottom: -7px;
+  border: none;
+  color: white;
+}
+
+.demo{
+  width: 30%;
+  height: 60%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #D7D7D7;
+  border: 1px solid black;
+  position: absolute;
+  right: 45%;
+}
+
+.code{
+  width: 30%;
+  height: 60%;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #0C090A;
+  color: white;
+  border: none;
+  position: absolute;
+  right: 10%;
+}
+
+.form-container>div>label{
+  font-weight: bold;
+  font-size: 17px;
+  position: relative;
+  top: 10%;
+}
 
 /*------------ project section ---------*/
 

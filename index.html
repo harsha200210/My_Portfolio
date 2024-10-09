@@ -26,1122 +26,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaQuery.css">
 
   <style>
-    @media all and (max-width: 1375px) and (min-width: 920px) {
-      /*--------- hero section ----------*/
-      .left-section{
-        width: 60%;
-      }
-      .right-section{
-        width: 40%;
-      }
-      .divider{
-        width: 150%;
-        left: -50%;
-      }
-      .left-section>label:nth-child(2){
-        font-size: 35px;
-      }
-      .left-section>label:nth-child(3){
-        font-size: 65px;
-        right: 90px;
-      }
-      .left-section>label:nth-child(4){
-        font-size: 20px;
-        right: 120px;
-      }
-      .social-icons{
-        right: 120px;
-      }
-      .social-icons>a>div {
-        width: 50px;
-        height: 50px;
-      }
-      .navbar{
-        top: 30px;
-        right: 15px;
-      }
-      .navbar ul {
-        gap: 0;
-      }
-      .navbar ul li a {
-        font-size: 14px;
-        padding-left: 17px;
-        padding-right: 17px;
-      }
-      .right-section-content>img{
-        width: 80%;
-      }
-      .right-section-content {
-        left: -130px;
-      }
 
-      /*--------- about section ----------*/
-      .about>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 25px;
-      }
-      .about>div:nth-child(2)>p{
-        font-size: 14px;
-      }
-      .about>div:nth-child(3)>img{
-        width: 200px;
-      }
-      .about>div:nth-child(4){
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-        font-size: 20px;
-      }
-
-      /*.backgroundImage {*/
-      /*  width: 400px;*/
-      /*  height: 300px;*/
-      /*  transform: translate(150px,-300px);*/
-      /*}*/
-      /*.backgroundImage>img {*/
-      /*  width: 300px;*/
-      /*  height: 300px;*/
-      /*}*/
-
-      /*--------- skills section ----------*/
-      .skill>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 25px;
-      }
-      .skill>label{
-        font-size: 22px;
-      }
-      .skill>section>div img {
-        width: 120px;
-        height: 120px;
-      }
-      .skill>section>div label{
-        font-size: 22px;
-      }
-
-      /*--------- education section ----------*/
-      .education>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 25px;
-      }
-
-      /*--------- project section ----------*/
-      .project>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 25px;
-      }
-      .project>section{
-        height: 75%;
-      }
-      .front-content>label{
-        font-size: 20px;
-      }
-      .front-content>p{
-        font-size: 15px;
-      }
-      .git-ico{
-        top: 90%;
-      }
-
-      /*--------- gallery section ----------*/
-      .gallery>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 25px;
-      }
-      .photo-section{
-        height: 60%;
-        gap: 20px;
-        top: 120px;
-      }
-      .photo-line>div {
-        width: 26vw;
-        height: 60vh;
-      }
-      @keyframes animate-slider-920 {
-        0%,17%{
-          transform: translateY(0);
-        }
-        20%,37%{
-          transform: translateY(-60vh);
-        }
-        41%,58%{
-          transform: translateY(calc(-60vh * 2));
-        }
-        62%,79%{
-          transform: translateY(calc(-60vh * 3));
-        }
-        83%,100%{
-          transform: translateY(calc(-60vh * 4));
-        }
-      }
-      .line-1{
-        animation: animate-slider-920 35s infinite alternate-reverse;
-      }
-
-      .line-2{
-        animation: animate-slider-920 35s infinite alternate;
-      }
-
-      .line-3{
-        animation: animate-slider-920 35s infinite alternate-reverse;
-      }
-
-      /*--------- contact section ----------*/
-      .contact>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 25px;
-      }
-      .email-form{
-        left: 10%;
-      }
-      .email-form>label:first-child{
-        font-size: 20px;
-      }
-      .email-form>label{
-        font-size: 15px;
-      }
-      .contact input[type="text"]{
-        width: 75%;
-      }
-      .email-form>textarea {
-        width: 75%;
-      }
-      .email-form>button{
-        width: 30%;
-        height: 6%;
-        left: 23%;
-        font-size: 14px;
-      }
-      .links{
-        width: 85%;
-        height: 60%;
-      }
-      .links img{
-        width: 40px;
-        height: 40px;
-      }
-      .links>div>img{
-        top: 35%;
-        left: 8%;
-      }
-      .links>div>a{
-        top: 15%;
-        left: 15%;
-      }
-      .links>div>p{
-        position: relative;
-        top: -5%;
-        bottom: 0;
-        left: 9%;
-        font-size: 16px;
-      }
-    }
-
-    @media all and (max-width: 919px) and (min-width: 650px) {
-      /*--------- hero section ----------*/
-      .left-section{
-        width: 60%;
-      }
-      .right-section{
-        width: 40%;
-      }
-      .divider{
-        width: 150%;
-        left: -50%;
-      }
-      .left-section>label:nth-child(1){
-        font-size: 45px;
-      }
-      .left-section>label:nth-child(2){
-        font-size: 25px;
-        right: 170px;
-      }
-      .left-section>label:nth-child(3){
-        font-size: 50px;
-        right: 70px;
-      }
-      .left-section>label:nth-child(4){
-        font-size: 18px;
-        right: 70px;
-      }
-      .social-icons{
-        right: 90px;
-      }
-      .social-icons>a>div {
-        width: 37px;
-        height: 37px;
-      }
-      .social-icons>a>div>img{
-        top: 6px;
-      }
-      .navbar{
-        top: 30px;
-        right: 20px;
-      }
-      .navbar ul {
-        gap: 0;
-      }
-      .navbar ul li a {
-        font-size: 12px;
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-      .right-section-content>img{
-        height: 80vh;
-        width: 100%;
-      }
-      .right-section-content {
-        left: -140px;
-      }
-
-      /*--------- about section ----------*/
-      .about>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 22px;
-      }
-      .about>div:nth-child(2)>p{
-        font-size: 12px;
-      }
-      .about>div:nth-child(3)>img{
-        width: 170px;
-      }
-      .about>div:nth-child(4){
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-        font-size: 17px;
-      }
-      .service>div>img{
-        width: 52px;
-        height: 56px;
-      }
-      .service>div>label {
-        font-size: 18px;
-      }
-      .service>div>p{
-        font-size: 12px;
-      }
-      /*.backgroundImage {*/
-      /*  width: 300px;*/
-      /*  height: 200px;*/
-      /*  transform: translate(150px,-300px);*/
-      /*  display: none;*/
-      /*}*/
-      /*.backgroundImage>img {*/
-      /*  width: 200px;*/
-      /*  height: 200px;*/
-      /*}*/
-
-      /*--------- skills section ----------*/
-      .skill>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 22px;
-      }
-      .skill>label{
-        font-size: 20px;
-      }
-      .skill>section>div img {
-        width: 100px;
-        height: 100px;
-      }
-      .skill>section>div label{
-        font-size: 20px;
-      }
-
-      /*--------- education section ----------*/
-      .education{
-        height: 85vh;
-      }
-      .education>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 22px;
-      }
-      .text>p{
-        font-size: 12px;
-      }
-      .dot{
-        width: 12px;
-        height: 12px;
-      }
-
-      /*--------- project section ----------*/
-      .project{
-        height: 150vh;
-      }
-      .project>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 22px;
-      }
-      .project>section{
-        height: 80%;
-        grid-template-columns: 1fr;
-      }
-      .front-content>label{
-        font-size: 18px;
-      }
-      .front-content>p{
-        font-size: 12px;
-      }
-      .code-p{
-        left: 50%;
-        top: 48%;
-      }
-      .git-ico{
-        top: 70%;
-        left: 50%;
-      }
-
-      /*--------- gallery section ----------*/
-      .gallery{
-        height: 189vh;
-      }
-      .gallery>div:first-child{
-        width: 20%;
-        height: 4%;
-        border: 4px solid black;
-        font-size: 22px;
-      }
-      .photo-section{
-        height: 90%;
-        width: 60%;
-        gap: 20px;
-        grid-template-columns: 1fr;
-        top: 100px;
-      }
-      .photo-line{
-        display: flex;
-      }
-      .photo-line>div {
-        width: 60vw;
-        height: 50vh;
-      }
-      @keyframes animate-slider-650 {
-        0%,17%{
-          transform: translateX(0);
-        }
-        20%,37%{
-          transform: translateX(-60vw);
-        }
-        41%,58%{
-          transform: translateX(calc(-60vw * 2));
-        }
-        62%,79%{
-          transform: translateX(calc(-60vw * 3));
-        }
-        83%,100%{
-          transform: translateX(calc(-60vw * 4));
-        }
-      }
-      .line-1{
-        animation: animate-slider-650 35s infinite alternate-reverse;
-        /*animation: none;*/
-      }
-
-      .line-2{
-        animation: animate-slider-650 35s infinite alternate;
-        /*animation: none;*/
-      }
-
-      .line-3{
-        animation: animate-slider-650 35s infinite alternate-reverse;
-        /*animation: none;*/
-      }
-
-      /*--------- contact section ----------*/
-      .contact>div:first-child{
-        width: 20%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 22px;
-      }
-      .email-form{
-        left: 0;
-      }
-      .email-form>label:first-child{
-        font-size: 18px;
-      }
-      .email-form>label{
-        font-size: 13px;
-      }
-      .contact input[type="text"]{
-        width: 80%;
-      }
-      .email-form>textarea {
-        width: 80%;
-      }
-      .email-form>button{
-        width: 40%;
-        height: 6%;
-        left: 23%;
-        font-size: 12px;
-      }
-      .links{
-        width: 90%;
-        height: 60%;
-      }
-      .links img{
-        width: 30px;
-        height: 30px;
-      }
-      .links>div>img{
-        top: 35%;
-        left: 8%;
-      }
-      .links>div>a{
-        top: 15%;
-        left: 12%;
-        font-size: 13px;
-      }
-      .links>div>p{
-        position: relative;
-        top: -5%;
-        bottom: 0;
-        left: 6%;
-        font-size: 13px;
-      }
-      .links>div:last-child>a{
-        top: -18%;
-      }
-    }
-
-    @media all and (max-width: 649px) and (min-width: 426px) {
-      /*--------- hero section ----------*/
-      .left-section{
-        width: 70%;
-      }
-      .right-section{
-        width: 30%;
-      }
-      .divider{
-        width: 190%;
-        left: -90%;
-        overflow: hidden;
-      }
-      .left-section>label:nth-child(1){
-        font-size: 35px;
-      }
-      .left-section>label:nth-child(2){
-        font-size: 25px;
-        right: 110px;
-        top: -170px;
-      }
-      .left-section>label:nth-child(3){
-        font-size: 32px;
-        right: 58px;
-        top: -140px;
-      }
-      .left-section>label:nth-child(4){
-        font-size: 14px;
-        right: 42px;
-        top: -140px;
-      }
-      .social-icons{
-        right: 50px;
-        top: -110px;
-      }
-      .social-icons>a>div {
-        width: 25px;
-        height: 25px;
-        z-index: 4;
-      }
-      .social-icons>a>div>img{
-        top: 4px;
-      }
-      .navbar{
-        top: -30px;
-        right: -70px;
-        display: none;
-      }
-      .menu-image{
-        display: flex;
-        width: 10%;
-      }
-      .navbar ul {
-        display: none;
-        gap: 0;
-      }
-      .navbar ul li a {
-        font-size: 12px;
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-      .right-section-content>img{
-        width: 100%;
-        height: 60vh;
-        z-index: -1;
-      }
-      .right-section-content {
-        left: -220px;
-      }
-
-      /*--------- about section ----------*/
-      .about>div:first-child{
-        width: 25%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 19px;
-      }
-      .about>div:nth-child(2)>p{
-        font-size: 11px;
-      }
-      .about>div:nth-child(3){
-        bottom: -35px;
-      }
-      .about>div:nth-child(3)>img{
-        width: 170px;
-      }
-      .about>div:nth-child(4){
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-        font-size: 15px;
-        width: 17%;
-        top: 70px;
-      }
-      .service{
-        top: 80px;
-      }
-      .service>div>img{
-        width: 50px;
-        height: 50px;
-      }
-      .service>div>label {
-        font-size: 13px;
-      }
-      .service>div>p{
-        font-size: 11px;
-      }
-      /*--------- skills section ----------*/
-      .skill{
-        height: 80vh;
-      }
-      .skill>div:first-child{
-        width: 25%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 19px;
-      }
-      .skill>label{
-        font-size: 17px;
-      }
-      .skill>section>div img {
-        width: 80px;
-        height: 80px;
-        bottom: 80px;
-      }
-      .skill>section>div label{
-        font-size: 16px;
-      }
-      .learning-skill{
-        width: 80%;
-      }
-      .learning-skill>div:nth-child(1)>label,.learning-skill>div:nth-child(3)>label{
-        left: 10px;
-      }
-
-      /*--------- education section ----------*/
-      .education{
-        height: 50vh;
-      }
-      .education>div:first-child{
-        width: 25%;
-        height: 10%;
-        border: 4px solid black;
-        font-size: 19px;
-      }
-      .wrap{
-        height: 70vmin;
-      }
-      .time{
-        font-size: 10px;
-        width: 22%;
-      }
-      .text>p{
-        font-size: 70%;
-      }
-      .dot{
-        width: 10px;
-        height: 10px;
-      }
-
-      /*--------- project section ----------*/
-      .project>div:first-child{
-        width: 25%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 19px;
-      }
-      .project>section{
-        height: 80%;
-        grid-template-columns: 1fr;
-      }
-      .front-content>label{
-        font-size: 18px;
-      }
-      .front-content>p{
-        font-size: 12px;
-      }
-      .code-p{
-        left: 50%;
-        top: 48%;
-      }
-      .git-ico{
-        top: 65%;
-        left: 50%;
-      }
-
-      /*--------- gallery section ----------*/
-      .gallery{
-        height: 150vh;
-      }
-      .gallery>div:first-child{
-        width: 25%;
-        height: 3%;
-        border: 4px solid black;
-        font-size: 19px;
-      }
-      .photo-section{
-        height: 85%;
-        width: 60%;
-        gap: 0;
-        grid-template-columns: 1fr;
-        top: 80px;
-      }
-      .photo-line{
-        display: flex;
-      }
-      .photo-line>div {
-        width: 60vw;
-        height: 40vh;
-      }
-      @keyframes animate-slider-426 {
-        0%,17%{
-          transform: translateX(0);
-        }
-        20%,37%{
-          transform: translateX(-60vw);
-        }
-        41%,58%{
-          transform: translateX(calc(-60vw * 2));
-        }
-        62%,79%{
-          transform: translateX(calc(-60vw * 3));
-        }
-        83%,100%{
-          transform: translateX(calc(-60vw * 4));
-        }
-      }
-      .line-1{
-        animation: animate-slider-426 35s infinite alternate-reverse;
-        /*animation: none;*/
-      }
-
-      .line-2{
-        animation: animate-slider-426 35s infinite alternate;
-        /*animation: none;*/
-      }
-
-      .line-3{
-        animation: animate-slider-426 35s infinite alternate-reverse;
-        /*animation: none;*/
-      }
-
-      /*--------- contact section ----------*/
-      .contact{
-        height: 120vh;
-      }
-      .contact>div:first-child{
-        width: 25%;
-        height: 6%;
-        border: 4px solid black;
-        font-size: 19px;
-      }
-      .contact>section{
-        grid-template-columns: 1fr;
-        height: 80%;
-      }
-      .email-form{
-        left: 5%;
-      }
-      .email-form>label:first-child{
-        font-size: 15px;
-      }
-      .email-form>label{
-        font-size: 12px;
-      }
-      .contact input[type="text"]{
-        width: 80%;
-      }
-      .email-form>textarea {
-        width: 80%;
-      }
-      .email-form>button{
-        width: 40%;
-        height: 6%;
-        left: 23%;
-        font-size: 12px;
-      }
-      .links{
-        width: 90%;
-        height: 80%;
-        top: 17%;
-      }
-      .links img{
-        width: 30px;
-        height: 30px;
-      }
-      .links>div>img{
-        top: 35%;
-        left: 8%;
-      }
-      .links>div>a{
-        top: 15%;
-        left: 12%;
-        font-size: 13px;
-      }
-      .links>div>p{
-        position: relative;
-        top: -5%;
-        bottom: 0;
-        left: 6%;
-        font-size: 13px;
-      }
-      .links>div:last-child>a{
-        top: -55%;
-        left: 20%;
-      }
-    }
-    @media all and (max-width: 425px) {
-      /*--------- hero section ----------*/
-      .left-section{
-        width: 75%;
-      }
-      .right-section{
-        width: 25%;
-      }
-      .divider{
-        width: 300%;
-        left: -145%;
-        overflow: hidden;
-      }
-      .left-section>label:nth-child(1){
-        font-size: 30px;
-        left: 20px;
-      }
-      .left-section>label:nth-child(2){
-        font-size: 20px;
-        right: 90px;
-        top: -210px;
-      }
-      .left-section>label:nth-child(3){
-        font-size: 28px;
-        right: 40px;
-        top: -190px;
-      }
-      .left-section>label:nth-child(4){
-        font-size: 11px;
-        right: 35px;
-        top: -190px;
-      }
-      .social-icons{
-        right: 50px;
-        top: -130px;
-        gap: 10px;
-      }
-      .social-icons>a>div {
-        width: 20px;
-        height: 20px;
-      }
-      .social-icons>a>div>img{
-        top: 4px;
-      }
-      .navbar{
-        top: -30px;
-        right: -70px;
-        display: none;
-      }
-      .menu-image{
-        display: flex;
-      }
-      .navbar ul {
-        display: none;
-        gap: 0;
-      }
-      .navbar ul li a {
-        font-size: 12px;
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-      .right-section-content>img{
-        width: 100%;
-        height: 55vh;
-      }
-      .right-section-content {
-        left: -250px;
-      }
-
-      /*--------- about section ----------*/
-      .about>div:first-child{
-        width: 30%;
-        height: 5%;
-        border: 4px solid black;
-        font-size: 17px;
-      }
-      .about>div:nth-child(2)>p{
-        font-size: 10px;
-      }
-      .about>div:nth-child(3){
-        bottom: -40px;
-      }
-      .about>div:nth-child(3)>img{
-        width: 150px;
-      }
-      .about>div:nth-child(4){
-        border-left: 3px solid black;
-        border-right: 3px solid black;
-        font-size: 14px;
-        width: 22%;
-        top: 70px;
-      }
-      .service{
-        top: 100px;
-      }
-      .service>div>img{
-        width: 40px;
-        height: 40px;
-      }
-      .service>div>label {
-        font-size: 10px;
-      }
-      .service>div>p{
-        font-size: 10px;
-      }
-      .design>img,.development>img{
-        left: 10px;
-      }
-      .design>label,.development>label{
-        left: -10px;
-        top: 5px;
-      }
-      .service>div:nth-child(3)>img{
-        left: -40px;
-        top: 5px;
-      }
-
-      /*--------- skills section ----------*/
-      .skill{
-        height: 70vh;
-      }
-      .skill>div:first-child{
-        width: 30%;
-        height: 5%;
-        border: 4px solid black;
-        font-size: 17px;
-      }
-      .skill>label{
-        font-size: 15px;
-      }
-      .skill>section>div img {
-        width: 80px;
-        height: 80px;
-        bottom: 60px;
-      }
-      .skill>section>div label{
-        font-size: 15px;
-      }
-      .learning-skill{
-        width: 90%;
-        height: 20%;
-        top: 220px;
-      }
-      /*--------- education section ----------*/
-      .education{
-        height: 60vh;
-      }
-      .education>div:first-child{
-        width: 30%;
-        height: 5%;
-        border: 4px solid black;
-        font-size: 17px;
-      }
-      .wrap{
-        height: 90vmin;
-      }
-      .time{
-        font-size: 9px;
-        width: 25%;
-      }
-      .text>p{
-        font-size: 64%;
-      }
-      .dot{
-        width: 8px;
-        height: 8px;
-      }
-
-      /*--------- project section ----------*/
-      .project>div:first-child{
-        width: 30%;
-        height: 5%;
-        border: 4px solid black;
-        font-size: 17px;
-      }
-      .project>section{
-        height: 80%;
-        grid-template-columns: 1fr;
-      }
-      .front-content>label{
-        font-size: 14px;
-      }
-      .front-content>p{
-        font-size: 10px;
-      }
-      .code-p{
-        left: 60%;
-        top: 50%;
-      }
-      .git-ico{
-        top: 65%;
-        left: 60%;
-      }
-
-      /*--------- gallery section ----------*/
-      .gallery{
-        height: 130vh;
-      }
-      .gallery>div:first-child{
-        width: 30%;
-        height: 3%;
-        border: 4px solid black;
-        font-size: 17px;
-      }
-      .photo-section{
-        height: 90%;
-        width: 60%;
-        gap: 0;
-        grid-template-columns: 1fr;
-        top: 80px;
-      }
-      .photo-line{
-        display: flex;
-      }
-      .photo-line>div {
-        width: 60vw;
-        height: 35vh;
-        z-index: 3;
-      }
-      @keyframes animate-slider-426 {
-        0%,17%{
-          transform: translateX(0);
-        }
-        20%,37%{
-          transform: translateX(-60vw);
-        }
-        41%,58%{
-          transform: translateX(calc(-60vw * 2));
-        }
-        62%,79%{
-          transform: translateX(calc(-60vw * 3));
-        }
-        83%,100%{
-          transform: translateX(calc(-60vw * 4));
-        }
-      }
-      .line-1{
-        animation: animate-slider-426 35s infinite alternate-reverse;
-        /*animation: none;*/
-      }
-
-      .line-2{
-        animation: animate-slider-426 35s infinite alternate;
-        /*animation: none;*/
-      }
-
-      .line-3{
-        animation: animate-slider-426 35s infinite alternate-reverse;
-        /*animation: none;*/
-      }
-
-      /*--------- contact section ----------*/
-      .contact>div:first-child{
-        width: 30%;
-        height: 5%;
-        border: 4px solid black;
-        font-size: 17px;
-      }
-      .contact>section{
-        grid-template-columns: 1fr;
-        height: 85%;
-      }
-      .email-form{
-        left: 5%;
-      }
-      .email-form>label:first-child{
-        font-size: 14px;
-      }
-      .email-form>label{
-        font-size: 11px;
-      }
-      .contact input[type="text"]{
-        width: 80%;
-      }
-      .email-form>textarea {
-        width: 80%;
-      }
-      .email-form>button{
-        width: 40%;
-        height: 6%;
-        left: 23%;
-        font-size: 12px;
-      }
-      .links{
-        width: 90%;
-        height: 80%;
-      }
-      .links img{
-        width: 25px;
-        height: 25px;
-      }
-      .links>div>img{
-        top: 38%;
-        left: 8%;
-      }
-      .links>div>a{
-        top: 15%;
-        left: 12%;
-        font-size: 12px;
-      }
-      .links>div>p{
-        position: relative;
-        top: -5%;
-        bottom: 0;
-        left: 6%;
-        font-size: 12px;
-      }
-      .links>div:last-child>a{
-        top: -85%;
-        left: 17%;
-      }
-    }
   </style>
 </head>
 <body>
@@ -1190,16 +78,16 @@
   <img class="menu-image" src="icon/menu_icon.png" alt="menu">
   <div class="navbar">
     <ul>
-      <li id="link"><a href="#">About me</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Education</a></li>
-      <li><a href="#">Project</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#" class="contact-nav">Contact Me</a></li>
+      <li id="link"><a href="#about">About me</a></li>
+      <li><a href="#skill">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact" class="contact-nav">Contact Me</a></li>
     </ul>
   </div>
 
-  <main class="about" id="about-">
+  <main class="about" id="about">
     <div data-aos="fade-down">About me</div>
     <div data-aos="flip-left">
       <p>With years of experience in building robust and efficient server-side applications, I strive to develop systems that ensure smooth and reliable user experiences. My expertise spans a wide range of server technologies and database management principles, allowing me to bring any complex functionality to life.</p>
@@ -1315,6 +203,122 @@
     </section>
   </main>
 
+  <main id="assignment" class="assignment">
+    <div data-aos="fade-down">Assignment</div>
+    <section class="assignment-cards">
+      <div class="assignment-1">
+        <label>Assignment 01</label>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deserunt error et exercitationem explicabo ipsam, iste itaque laborum magni nisi optio quisquam quod rem suscipit totam voluptas. Fugit, obcaecati?</p>
+        <a>
+          <label>Sample Video</label>
+        </a>
+        <button>Demo</button>
+        <button>Code</button>
+      </div>
+      <div class="assignment-2">
+        <label>Assignment 02</label>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eligendi officiis quia quos similique tempora, tenetur! Accusamus ad culpa dolorum enim ex, maxime nesciunt odit quam, suscipit, tempore tenetur.</p>
+        <a>
+          <label>Sample Video</label>
+        </a>
+        <button>Demo</button>
+        <button>Code</button>
+      </div>
+      <div class="assignment-3">
+        <label>Assignment 03</label>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eligendi officiis quia quos similique tempora, tenetur! Accusamus ad culpa dolorum enim ex, maxime nesciunt odit quam, suscipit, tempore tenetur.</p>
+        <a>
+          <label>Sample PDF</label>
+        </a>
+        <button class="open-button" onclick="openFormAssignment3()">View Cases</button>
+
+        <div class="form-popup" id="myForm">
+          <form class="form-container">
+            <div>
+              <label>Case 01</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <label>Case 02</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <label>Case 03</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <label>Case 04</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <label>Case 05</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <label>Case 06</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <button type="button" class="btn-cancel" onclick="closeFormAssignment3()">Close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="assignment-4">
+        <label>Assignment 04</label>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eligendi officiis quia quos similique tempora, tenetur! Accusamus ad culpa dolorum enim ex, maxime nesciunt odit quam, suscipit, tempore tenetur.</p>
+        <a>
+          <label>Sample PDF</label>
+        </a>
+        <button class="open-button" onclick="openFormAssignment4()">View Cases</button>
+
+        <div class="form-popup" id="myForm1">
+          <form class="form-container">
+            <div>
+              <label>Case 01</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <label>Case 02</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <label>Case 03</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <label>Case 04</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <label>Case 05</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <label>Case 06</label>
+              <button class="demo">Demo</button>
+              <button class="code">Code</button>
+            </div>
+            <div>
+              <button type="button" class="btn-cancel" onclick="closeFormAssignment4()">Close</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <main id="project" class="project">
     <div data-aos="fade-down">Projects</div>
     <section class="project-divs">
@@ -1363,32 +367,6 @@
   <main id="gallery" class="gallery">
     <div data-aos="fade-down">Gallery</div>
     <section class="photo-section" data-aos="fade-up">
-<!--      <div class="gallery-photos">-->
-<!--        <span style="&#45;&#45;i:1">-->
-<!--          <img src="/image/gallery/IMG-20240828-WA0348.jpg" alt="" />-->
-<!--        </span>-->
-<!--              <span style="&#45;&#45;i:2">-->
-<!--          <img src="/image/gallery/IMG-20240309-WA0038.jpg" alt="" />-->
-<!--        </span>-->
-<!--              <span style="&#45;&#45;i:3">-->
-<!--          <img src="/image/gallery/IMG-20240510-WA0036.jpg" alt="" />-->
-<!--        </span>-->
-<!--              <span style="&#45;&#45;i:4">-->
-<!--          <img src="/image/gallery/IMG-20240828-WA0179.jpg" alt="" />-->
-<!--        </span>-->
-<!--              <span style="&#45;&#45;i:5">-->
-<!--          <img src="/image/gallery/IMG_0596_2.jpg" alt="" />-->
-<!--        </span>-->
-<!--              <span style="&#45;&#45;i:6">-->
-<!--          <img src="/image/gallery/Polish_20240614_215121149.jpg" alt="" />-->
-<!--        </span>-->
-<!--              <span style="&#45;&#45;i:7">-->
-<!--          <img src="/image/gallery/PXL_20240217_005307284.PORTRAIT-1.jpg" alt="" />-->
-<!--        </span>-->
-<!--              <span style="&#45;&#45;i:8">-->
-<!--          <img src="/image/gallery/IMG_0375%20(1).jpg" alt="" />-->
-<!--        </span>-->
-<!--      </div>-->
       <div class="photo-line line-1">
         <div></div>
         <div></div>
@@ -1412,6 +390,7 @@
       </div>
     </section>
   </main>
+
   <main id="contact" class="contact">
     <div data-aos="fade-down">Contact</div>
     <section class="contact-section">
@@ -1463,19 +442,21 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-    const root = document.documentElement;
-    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-    const marqueeContent = document.querySelector("ul.marquee-content");
+    document.addEventListener("DOMContentLoaded", function() {
+      const root = document.documentElement;
+      const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+      const marqueeContent = document.querySelector("ul.marquee-content");
 
-    root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+      if (marqueeContent) {  // Ensure marqueeContent exists
+        root.style.setProperty("--marquee-elements", marqueeContent.children.length);
 
-    for (let i = 0; i < marqueeElementsDisplayed; i++) {
-      marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-    }
-
+        for (let i = 0; i < marqueeElementsDisplayed; i++) {
+          marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+        }
+      }
+      AOS.init();
+    });
   </script>
-  <script>
-    AOS.init();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

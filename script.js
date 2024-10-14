@@ -32,6 +32,33 @@ function myFunction(x) {
   }
 }
 
-function upToPage(){
-  window.scroll(0,0);
+// function upToPage(){
+//   window.scrollTo({
+//     top: 0,
+//     left: 0,
+//     behavior: 'smooth'
+//   });
+// }
+
+function slowScrollToTop(duration) {
+  const startPosition = window.pageYOffset;
+  const startTime = performance.now();
+
+  function scrollStep(currentTime) {
+    const elapsedTime = currentTime - startTime;
+    const progress = Math.min(elapsedTime / duration, 1); // Ensure progress does not exceed 1
+    const scrollY = startPosition * (1 - progress); // Gradually decrease the scroll position
+
+    window.scrollTo(0, scrollY);
+
+    if (progress < 1) {
+      requestAnimationFrame(scrollStep); // Continue scrolling
+    }
+  }
+
+  requestAnimationFrame(scrollStep);
 }
+
+// Usage: scroll to top in 2 seconds (2000 milliseconds)
+slowScrollToTop(2000);
+

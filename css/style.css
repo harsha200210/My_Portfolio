@@ -555,7 +555,7 @@ img{
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
-.using-skill {
+:root {
   --marquee-width: 90vw;
   --marquee-height: 20vh;
   --marquee-elements-displayed: 5;
@@ -615,15 +615,15 @@ img{
   position: relative;
 }
 
-@media (max-width: 600px) {
-  html { font-size: 12px; }
-  .using-skill {
-    --marquee-width: 100vw;
-    --marquee-height: 20vh;
-    --marquee-elements-displayed: 3;
-  }
-  .marquee:before, .marquee:after { width: 5rem; }
-}
+/*@media (max-width: 600px) {*/
+/*  html { font-size: 12px; }*/
+/*  .using-skill {*/
+/*    --marquee-width: 100vw;*/
+/*    --marquee-height: 20vh;*/
+/*    --marquee-elements-displayed: 3;*/
+/*  }*/
+/*  .marquee:before, .marquee:after { width: 5rem; }*/
+/*}*/
 
 /*------------ education section ---------*/
 

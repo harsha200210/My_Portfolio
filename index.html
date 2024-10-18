@@ -33,7 +33,7 @@
   </style>
 </head>
 <body>
-  <main class="hero">
+  <main class="hero" id="hero">
     <div class="left-section">
       <label>HD</label>
       <label data-aos="fade-up-right">Hi,I am</label>
@@ -123,7 +123,45 @@
     </ul>
   </div>
 
-  <div class="up-btn" onclick="slowScrollToTop(2000)"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-chevron-up.png" alt="circled-chevron-up"/></div>
+  <div class="up-btn">
+    <img id="btn-open" width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-chevron-up.png" alt="circled-chevron-up"/>
+    <img id="btn-close" width="50" height="50" src="https://img.icons8.com/ios-filled/50/cancel.png" alt="cancel"/>
+  </div>
+
+  <div class="menu-div-btn">
+    <div>
+      <img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/50/home.png" alt="home"/>
+      <a href="#hero">Home</a>
+    </div>
+    <div>
+      <img width="30" height="30" src="https://img.icons8.com/material-rounded/48/info.png" alt="info"/>
+      <a href="#about">About</a>
+    </div>
+    <div>
+      <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/popular-woman.png" alt="popular-woman"/>
+      <a href="#skill">Skills</a>
+    </div>
+    <div>
+      <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/education.png" alt="education"/>
+      <a href="#education">Education</a>
+    </div>
+    <div>
+      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/signing-a-document.png" alt="signing-a-document"/>
+      <a href="#assignment">Assignments</a>
+    </div>
+    <div>
+      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/group-of-projects.png" alt="group-of-projects"/>
+      <a href="#project">Projects</a>
+    </div>
+    <div>
+      <img width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/50/gallery.png" alt="gallery"/>
+      <a href="#gallery">Gallery</a>
+    </div>
+    <div>
+      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/contact-card.png" alt="contact-card"/>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
 
   <main class="about" id="about">
     <div data-aos="fade-down">About me</div>
@@ -242,33 +280,24 @@
     <div data-aos="fade-down">Assignment</div>
     <section class="assignment-cards">
       <div class="assignment-1" data-aos="fade-down-right">
-        <label>Assignment 01</label>
+        <label>POS System</label>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi deserunt error et exercitationem explicabo ipsam, iste itaque laborum magni nisi optio quisquam quod rem suscipit totam voluptas. Fugit, obcaecati?</p>
-        <a>
-          <label>Sample Video</label>
-        </a>
         <a href="assignment/assignment_01.html" target="_blank">
           <button>Demo</button>
         </a>
-        <a href="https://github.com/harsha200210/Assignment-01-02/blob/main/Assignment%2001.html" target="_blank">
+        <a href="https://github.com/harsha200210/POS_System.git" target="_blank">
           <button>Code</button>
         </a>
       </div>
       <div class="assignment-2" data-aos="fade-down-left">
-        <label>Assignment 02</label>
+        <label>Portfolio</label>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eligendi officiis quia quos similique tempora, tenetur! Accusamus ad culpa dolorum enim ex, maxime nesciunt odit quam, suscipit, tempore tenetur.</p>
-        <a>
-          <label>Sample Video</label>
-        </a>
-        <a href="assignment/assignment_02.html" target="_blank">
-          <button>Demo</button>
-        </a>
-        <a href="https://github.com/harsha200210/Assignment-01-02/blob/main/Assignment%2002.html" target="_blank">
+        <a href="https://github.com/harsha200210/My_Portfolio.git" target="_blank">
           <button>Code</button>
         </a>
       </div>
       <div class="assignment-3" data-aos="fade-up-right">
-        <label>Assignment 03</label>
+        <label>Transition</label>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eligendi officiis quia quos similique tempora, tenetur! Accusamus ad culpa dolorum enim ex, maxime nesciunt odit quam, suscipit, tempore tenetur.</p>
         <a href="pdf/03%20(1).pdf" target="_blank">
           <label>Sample PDF</label>
@@ -314,7 +343,7 @@
         </div>
       </div>
       <div class="assignment-4" data-aos="fade-up-left">
-        <label>Assignment 04</label>
+        <label>Animation</label>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis eligendi officiis quia quos similique tempora, tenetur! Accusamus ad culpa dolorum enim ex, maxime nesciunt odit quam, suscipit, tempore tenetur.</p>
         <a href="pdf/04.pdf" target="_blank">
           <label>Sample PDF</label>

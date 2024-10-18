@@ -20,10 +20,13 @@ function closeFormAssignment4() {
   document.getElementsByClassName("open-button")[1].style.display = "block";
 }
 
+var menuDiv = document.getElementsByClassName("menu-div")[0];
+
+var menu = null;
+
 function myFunction(x) {
   x.classList.toggle("change");
-
-  var menuDiv = document.getElementsByClassName("menu-div")[0];
+  menu = x;
 
   if (menuDiv.style.display === "grid") {
     menuDiv.style.display = "none";
@@ -32,13 +35,10 @@ function myFunction(x) {
   }
 }
 
-// function upToPage(){
-//   window.scrollTo({
-//     top: 0,
-//     left: 0,
-//     behavior: 'smooth'
-//   });
-// }
+document.getElementsByClassName("menu-div")[0].addEventListener("click", function (){
+  menuDiv.style.display = "none";
+  menu.classList.toggle("change");
+});
 
 function slowScrollToTop(duration) {
   const startPosition = window.pageYOffset;
@@ -59,6 +59,34 @@ function slowScrollToTop(duration) {
   requestAnimationFrame(scrollStep);
 }
 
-// Usage: scroll to top in 2 seconds (2000 milliseconds)
-slowScrollToTop(2000);
+var openBtn = document.getElementById("btn-open");
+var closeBtn = document.getElementById("btn-close");
+var menuDivBtn = document.getElementsByClassName("menu-div-btn")[0];
+
+openBtn.addEventListener("click", function (){
+  openBtn.style.display = "none";
+  closeBtn.style.display = "block";
+  menuDivBtn.style.display = "grid";
+  menuDivBtn.style.animation = "1s menuDivBtnHeight";
+});
+
+closeBtn.addEventListener("click", function (){
+  openBtn.style.display = "block";
+  closeBtn.style.display = "none";
+  menuDivBtn.style.animation = "1s menuDivBtnHeightMin";
+
+  setTimeout(function() {
+    menuDivBtn.style.display = "none";
+  }, 1000);
+});
+
+menuDivBtn.addEventListener("click", function (){
+  openBtn.style.display = "block";
+  closeBtn.style.display = "none";
+  menuDivBtn.style.animation = "1s menuDivBtnHeightMin";
+
+  setTimeout(function() {
+    menuDivBtn.style.display = "none";
+  }, 1000);
+});
 

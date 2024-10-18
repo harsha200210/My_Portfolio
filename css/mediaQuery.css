@@ -128,8 +128,9 @@
   .assignment-1 button , .assignment-2 button{
     font-size: 18px;
   }
-  .assignment-1>a:nth-child(4) , .assignment-2>a:nth-child(4) , .assignment-1>a:nth-child(5) , .assignment-2>a:nth-child(5){
+  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4){
     height: 13%;
+    font-size: 20px;
   }
   .assignment-cards>div>label:first-child{
     font-size: 23px;
@@ -425,7 +426,8 @@
   .assignment-1 button , .assignment-2 button{
     font-size: 18px;
   }
-  .assignment-1>a:nth-child(4) , .assignment-2>a:nth-child(4) , .assignment-1>a:nth-child(5) , .assignment-2>a:nth-child(5){
+  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4){
+    font-size: 20px;
     height: 13%;
   }
   .assignment-cards>div>label:first-child{
@@ -799,7 +801,7 @@
   .assignment-1 button , .assignment-2 button{
     font-size: 15px;
   }
-  .assignment-1>a:nth-child(4) , .assignment-2>a:nth-child(4) , .assignment-1>a:nth-child(5) , .assignment-2>a:nth-child(5){
+  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4){
     height: 10%;
     top: 84%;
   }
@@ -809,7 +811,7 @@
   .assignment-cards>div>p:nth-child(2) {
     font-size: 12px;
   }
-  .assignment-cards>div>a:nth-child(3){
+  .assignment-3>a:nth-child(3) , .assignment-4>a:nth-child(3) , .assignment-3>a:nth-child(2) , .assignment-4>a:nth-child(2){
     font-size: 15px;
     top: 69%;
   }
@@ -986,6 +988,7 @@
     left: 20%;
   }
 }
+
 @media all and (max-width: 425px) {
   /*--------- hero section ----------*/
   .left-section{
@@ -1143,7 +1146,7 @@
   }
   /*--------- education section ----------*/
   .education{
-    height: 60vh;
+    height: 65vh;
   }
   .education>div:first-child{
     width: 30%;
@@ -1190,9 +1193,10 @@
   .assignment-1 button , .assignment-2 button{
     font-size: 14px;
   }
-  .assignment-1>a:nth-child(4) , .assignment-2>a:nth-child(4) , .assignment-1>a:nth-child(5) , .assignment-2>a:nth-child(5){
+  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4){
     height: 13%;
     top: 82%;
+    font-size: 14px;
   }
   .assignment-cards>div>label:first-child{
     font-size: 17px;
@@ -1200,7 +1204,7 @@
   .assignment-cards>div>p:nth-child(2) {
     font-size: 11px;
   }
-  .assignment-cards>div>a:nth-child(3){
+  .assignment-3>a:nth-child(3) , .assignment-4>a:nth-child(3) , .assignment-3>a:nth-child(2) , .assignment-4>a:nth-child(2){
     font-size: 14px;
     top: 69%;
   }

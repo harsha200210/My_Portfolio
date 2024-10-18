@@ -925,7 +925,7 @@
 
   /*--------- contact section ----------*/
   .contact{
-    height: 120vh;
+    height: 140vh;
   }
   .contact>div:first-child{
     width: 25%;
@@ -1318,6 +1318,9 @@
   }
 
   /*--------- contact section ----------*/
+  .contact{
+    height: 140vh;
+  }
   .contact>div:first-child{
     width: 30%;
     height: 5%;
@@ -1374,7 +1377,7 @@
     font-size: 12px;
   }
   .links>div:last-child>a{
-    top: -85%;
+    top: -65%;
     left: 17%;
   }
 }

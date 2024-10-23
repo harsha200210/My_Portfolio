@@ -67,26 +67,26 @@ openBtn.addEventListener("click", function (){
   openBtn.style.display = "none";
   closeBtn.style.display = "block";
   menuDivBtn.style.display = "grid";
-  menuDivBtn.style.animation = "1s menuDivBtnHeight";
+  menuDivBtn.style.animation = "0.5s menuDivBtnHeight";
 });
 
 closeBtn.addEventListener("click", function (){
   openBtn.style.display = "block";
   closeBtn.style.display = "none";
-  menuDivBtn.style.animation = "1s menuDivBtnHeightMin";
+  menuDivBtn.style.animation = "0.5s menuDivBtnHeightMin";
 
   setTimeout(function() {
     menuDivBtn.style.display = "none";
-  }, 1000);
+  }, 500);
 });
 
 menuDivBtn.addEventListener("click", function (){
   openBtn.style.display = "block";
   closeBtn.style.display = "none";
-  menuDivBtn.style.animation = "1s menuDivBtnHeightMin";
+  menuDivBtn.style.animation = "0.5s menuDivBtnHeightMin";
 
   setTimeout(function() {
     menuDivBtn.style.display = "none";
-  }, 1000);
+  }, 500);
 });
 

@@ -166,9 +166,6 @@
   .front-content>p{
     font-size: 15px;
   }
-  .git-ico{
-    top: 90%;
-  }
 
   /*--------- gallery section ----------*/
   .gallery>div:first-child{
@@ -476,14 +473,6 @@
   }
   .front-content>p{
     font-size: 12px;
-  }
-  .code-p{
-    left: 50%;
-    top: 48%;
-  }
-  .git-ico{
-    top: 70%;
-    left: 50%;
   }
 
   /*--------- gallery section ----------*/
@@ -858,13 +847,8 @@
   .front-content>p{
     font-size: 12px;
   }
-  .code-p{
-    left: 50%;
-    top: 48%;
-  }
   .git-ico{
-    top: 65%;
-    left: 50%;
+    top: 55%;
   }
 
   /*--------- gallery section ----------*/
@@ -1256,8 +1240,7 @@
     top: 50%;
   }
   .git-ico{
-    top: 65%;
-    left: 60%;
+    top: 55%;
   }
 
   /*--------- gallery section ----------*/

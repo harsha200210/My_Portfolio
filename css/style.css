@@ -5,6 +5,10 @@ body {
   align-content: center;
 }
 
+p{
+  font-weight: 500;
+}
+
 .hero {
   display: flex;
   height: 100vh;
@@ -1347,18 +1351,17 @@ p {
 .front-content>p{
   font-size: 20px;
   width: 95%;
-}
-
-.code-p{
-  position: absolute;
+  margin: 10px 0 15px;
 }
 
 .git-ico{
   position: absolute;
-  left: 3% ;
-  top: 95%;
+  right: 10% ;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 /*------------ gallery section ---------*/
 
 .gallery{
@@ -1427,58 +1430,52 @@ p {
 }
 
 .line-1>div:first-child{
-  background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
-  background-position: top;
+  background-image: url("/image/gallery/harsha.jpg");
 }
 .line-1>div:nth-child(2){
-  background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
-  background-position: top;
+  background-image: url("/image/gallery/IMG-20240308-WA0077.jpg");
 }
 .line-1>div:nth-child(3){
-  background-image: url("/image/gallery/Polish_20240614_215121149.jpg");
+  background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
 }
 .line-1>div:nth-child(4){
-  background-image: url("/image/gallery/IMG-20240828-WA0348.jpg");
+  background-image: url("/image/gallery/IMG-20240828-WA0179.jpg");
 }
 .line-1>div:nth-child(5){
-  background-image: url("/image/gallery/Picsart_24-02-20_10-34-29-447.png");
+  background-image: url("/image/gallery/IMG-20240828-WA0348.jpg");
 }
 
 .line-2>div:first-child{
-  background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
-  background-position: top;
+  background-image: url("/image/gallery/IMG_0375 (1).jpg");
 }
 .line-2>div:nth-child(2){
-  background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
+  background-image: url("/image/gallery/IMG_0596_2.jpg");
   background-position: top;
 }
 .line-2>div:nth-child(3){
-  background-image: url("/image/gallery/Polish_20240614_215121149.jpg");
+  background-image: url("/image/gallery/IMG_0597.jpg");
 }
 .line-2>div:nth-child(4){
-  background-image: url("/image/gallery/IMG-20240828-WA0348.jpg");
+  background-image: url("/image/gallery/IMG_20241023_194457.jpg");
 }
 .line-2>div:nth-child(5){
-  background-image: url("/image/gallery/PXL_20240217_005307284.PORTRAIT-1.jpg");
+  background-image: url("/image/gallery/IMG_20241023_194600.jpg");
 }
 
 .line-3>div:first-child{
-  background-image: url("/image/gallery/IMG-20240309-WA0038.jpg");
-  background-position: top;
+  background-image: url("/image/gallery/IMG_20241023_194736.jpg");
 }
 .line-3>div:nth-child(2){
-  background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
-  background-position: top;
+  background-image: url("/image/gallery/IMG_20241023_195118.jpg");
 }
 .line-3>div:nth-child(3){
-  background-image: url("/image/gallery/Polish_20240614_215121149.jpg");
+  background-image: url("/image/gallery/IMG_20241023_195221.jpg");
 }
 .line-3>div:nth-child(4){
-  background-image: url("/image/gallery/IMG-20240828-WA0348.jpg");
+  background-image: url("/image/gallery/PXL_20240217_004607522.PORTRAIT (1).jpg");
 }
 .line-3>div:nth-child(5){
-  background-image: url("/image/gallery/IMG_0596_2.jpg");
-  background-position: top;
+  background-image: url("/image/gallery/PXL_20240217_005307284.PORTRAIT-1.jpg");
 }
 
 @keyframes animate-slider {

@@ -1437,6 +1437,7 @@ p {
 }
 .line-1>div:nth-child(3){
   background-image: url("/image/gallery/IMG-20240510-WA0036.jpg");
+  background-position: right;
 }
 .line-1>div:nth-child(4){
   background-image: url("/image/gallery/IMG-20240828-WA0179.jpg");

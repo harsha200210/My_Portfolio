@@ -1561,7 +1561,7 @@ p {
   font-size: 20px;
 }
 
-.contact input[type="text"]{
+.contact input[type="text"] , .contact input[type="email"]{
   border-left: 3px solid black;
   border-bottom: 3px solid black;
   border-right: none;

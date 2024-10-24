@@ -465,22 +465,22 @@
     <div data-aos="fade-down">Contact</div>
     <section class="contact-section">
       <div class="send-email" data-aos="fade-up-right">
-        <form class="email-form">
+        <form class="email-form" id="contact-form">
           <label>Drop Me A Line</label><br><br><br><br>
           <label for="name">Your Full Name</label><br><br>
           <label>
-            <input type="text" id="name" placeholder="Enter your name">
+            <input type="text" id="name" name="name" placeholder="Enter your name">
           </label><br><br><br>
           <label for="email">Your Email</label><br><br>
           <label>
-            <input type="text" id="email" placeholder="Enter your email">
+            <input type="email" id="email" name="email" placeholder="Enter your email">
           </label><br><br><br>
           <label for="subject">Subject</label><br><br>
           <label>
-            <input type="text" id="subject" placeholder="Enter Subject">
+            <input type="text" id="subject" name="subject" placeholder="Enter Subject">
           </label><br><br><br>
           <label for="message">Message</label><br><br>
-          <textarea id="message" placeholder="Enter Message"></textarea><br><br>
+          <textarea id="message" name="message" placeholder="Enter Message"></textarea><br><br>
           <button type="submit">Send Email</button>
         </form>
       </div>
@@ -511,6 +511,27 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    // Initialize EmailJS with your user ID
+    (function() {
+      emailjs.init("Xn2LTXiKvtS1AwAnE"); // Replace with your EmailJS user ID
+    })();
+
+    // Add form submission event listener
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Send the form data using EmailJS
+      emailjs.sendForm('service_bghqzs8', 'template_9xsjv03', this)
+        .then(function() {
+          alert('Email sent successfully!');
+        }, function(error) {
+          alert('Failed to send email. Error: ' + error.text);
+        });
+    });
+  </script>
+
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const root = document.documentElement;

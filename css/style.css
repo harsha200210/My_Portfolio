@@ -1443,14 +1443,14 @@ p {
   background-image: url("/image/gallery/IMG-20240828-WA0179.jpg");
 }
 .line-1>div:nth-child(5){
-  background-image: url("/image/gallery/IMG-20240828-WA0348.jpg");
+  background-image: url("/image/gallery/IMG_0596_2.jpg");
 }
 
 .line-2>div:first-child{
   background-image: url("/image/gallery/IMG_0375 (1).jpg");
 }
 .line-2>div:nth-child(2){
-  background-image: url("/image/gallery/IMG_0596_2.jpg");
+  background-image: url("/image/gallery/IMG-20240828-WA0348.jpg");
   background-position: top;
 }
 .line-2>div:nth-child(3){

@@ -1687,17 +1687,20 @@ footer{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr;
+  top: 0;
+  overflow: hidden;
 }
 
 .bike-animation{
   background:radial-gradient(#D7D7D7 0%,white 150%);
   position: relative;
   border: none;
+  overflow: hidden;
 }
 
 .bike-gif{
   width: 120px;
-  height: 120px;
+  height: 100%;
   position: absolute;
   bottom: 0;
   animation: bike-animate 6s infinite;
@@ -1705,7 +1708,6 @@ footer{
 
 @keyframes bike-animate {
   0%{
-    /*transform: translateX(0);*/
     left: 0;
   }
   30%{
@@ -1717,7 +1719,6 @@ footer{
     bottom: 0;
   }
   100%{
-    /*transform: translateX(100vw);*/
     left: 100vw;
   }
 }

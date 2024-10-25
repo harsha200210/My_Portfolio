@@ -90,3 +90,19 @@ menuDivBtn.addEventListener("click", function (){
   }, 500);
 });
 
+ScrollReveal({
+  reset:true,
+  distance:'60px',
+  duration:2500,
+  delay:100
+});
+
+ScrollReveal().reveal('.graduation-cap',{
+  origin: 'top',
+  distance: '200px'
+});
+
+ScrollReveal().reveal('.diploma',{
+  origin: 'bottom',
+  distance: '200px'
+});

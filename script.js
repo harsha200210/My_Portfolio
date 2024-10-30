@@ -20,6 +20,19 @@ function closeFormAssignment4() {
   document.getElementsByClassName("open-button")[1].style.display = "block";
 }
 
+function openFormAssignment7() {
+  document.getElementById("show-cases").style.display = "block";
+  document.getElementsByClassName("open-button")[2].style.display = "none";
+  closeFormAssignment3();
+}
+
+function closeFormAssignment7() {
+  document.getElementById("show-cases").style.display = "none";
+  document.getElementsByClassName("open-button")[2].style.display = "block";
+}
+
+
+
 var menuDiv = document.getElementsByClassName("menu-div")[0];
 
 var menu = null;
@@ -106,3 +119,26 @@ ScrollReveal().reveal('.diploma',{
   origin: 'bottom',
   distance: '200px'
 });
+
+// assignment change pages
+let assignmentCard2 = document.getElementById("assignment-cards-2");
+let assignmentCard1 = document.getElementById("assignment-cards-1");
+let previousBtn = document.getElementById("btn-previous");
+let nextBtn = document.getElementById("btn-next");
+
+assignmentCard2.style.display = "none";
+
+previousBtn.addEventListener("click", function (){
+  if (assignmentCard1.style.display === "none") {
+    assignmentCard2.style.display = "none";
+    assignmentCard1.style.display = "grid";
+  }
+});
+
+nextBtn.addEventListener("click", function (){
+  if (assignmentCard2.style.display === "none") {
+    assignmentCard2.style.display = "grid";
+    assignmentCard1.style.display = "none";
+  }
+})
+

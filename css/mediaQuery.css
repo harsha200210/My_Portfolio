@@ -113,7 +113,7 @@
   /*--------- assignment section ----------*/
 
   .assignment{
-    height: 100vh;
+    height: 105vh;
   }
   .assignment>div:first-child{
     width: 20%;
@@ -122,16 +122,17 @@
     font-size: 25px;
   }
   .assignment-cards{
-    height: 75%;
+    height: 70%;
     grid-template-columns: 1fr 1fr;
+    top: 10%;
   }
   .assignment-cards>div:hover{
     transform: scale(1.12);
   }
-  .assignment-1 button , .assignment-2 button{
+  .assignment-1 button , .assignment-2 button, .assignment-5 button, .assignment-6 button{
     font-size: 18px;
   }
-  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4){
+  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4), .assignment-5>a:nth-child(4), .assignment-6>a:nth-child(4), .assignment-5>a:nth-child(5), .assignment-6>a:nth-child(5){
     height: 13%;
     font-size: 20px;
   }
@@ -141,7 +142,7 @@
   .assignment-cards>div>p:nth-child(2) {
     font-size: 15px;
   }
-  .assignment-3>button , .assignment-4>button{
+  .assignment-3>button , .assignment-4>button , .assignment-7>button{
     height: 13%;
     font-size: 20px;
   }
@@ -151,6 +152,10 @@
   .form-container>div>a{
     font-size: 17px;
     height: 70%;
+  }
+  .assignment-btn-div>button{
+    width: 20%;
+    font-size: 17px;
   }
 
   /*--------- project section ----------*/
@@ -424,7 +429,7 @@
   /*--------- assignment section ----------*/
 
   .assignment{
-    height: 100vh;
+    height: 105vh;
   }
   .assignment>div:first-child{
     width: 22%;
@@ -433,16 +438,17 @@
     font-size: 22px;
   }
   .assignment-cards{
-    height: 75%;
+    height: 70%;
     grid-template-columns: 1fr 1fr;
+    top: 7%;
   }
   .assignment-cards>div:hover{
     transform: scale(1.15);
   }
-  .assignment-1 button , .assignment-2 button{
+  .assignment-1 button , .assignment-2 button, .assignment-5 button, .assignment-6 button{
     font-size: 18px;
   }
-  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4){
+  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4), .assignment-5>a:nth-child(4), .assignment-6>a:nth-child(4), .assignment-5>a:nth-child(5), .assignment-6>a:nth-child(5){
     font-size: 20px;
     height: 13%;
   }
@@ -452,7 +458,7 @@
   .assignment-cards>div>p:nth-child(2) {
     font-size: 14px;
   }
-  .assignment-3>button , .assignment-4>button{
+  .assignment-3>button , .assignment-4>button , .assignment-7>button{
     height: 13%;
     font-size: 20px;
   }
@@ -470,6 +476,10 @@
     right: 41%;
   }
   .form-container>div>label{
+    font-size: 16px;
+  }
+  .assignment-btn-div>button{
+    width: 20%;
     font-size: 16px;
   }
 
@@ -804,7 +814,7 @@
   /*--------- assignment section ----------*/
 
   .assignment{
-    height: 100vh;
+    height: 105vh;
   }
   .assignment>div:first-child{
     width: 30%;
@@ -813,18 +823,18 @@
     font-size: 19px;
   }
   .assignment-cards{
-    height: 80%;
+    height: 75%;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    top: 15%;
+    top: 5%;
   }
   .assignment-cards>div:hover{
     transform: scale(1.1);
   }
-  .assignment-1 button , .assignment-2 button{
+  .assignment-1 button , .assignment-2 button, .assignment-5 button, .assignment-6 button{
     font-size: 15px;
   }
-  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4){
+  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4), .assignment-5>a:nth-child(4), .assignment-6>a:nth-child(4), .assignment-5>a:nth-child(5), .assignment-6>a:nth-child(5){
     height: 10%;
     top: 84%;
   }
@@ -838,10 +848,14 @@
     font-size: 15px;
     top: 69%;
   }
-  .assignment-3>button , .assignment-4>button{
+  .assignment-3>button , .assignment-4>button , .assignment-7>button{
     height: 12%;
     font-size: 15px;
     top: 84%;
+  }
+  .show-cases{
+    bottom: 5%;
+    height: 35%;
   }
   .form-popup{
     top: 9%;
@@ -862,6 +876,11 @@
   }
   .form-container>div>label{
     font-size: 13px;
+  }
+  .assignment-btn-div>button{
+    width: 27%;
+    height: 90%;
+    font-size: 15px;
   }
 
   /*--------- project section ----------*/
@@ -1206,7 +1225,7 @@
   /*--------- assignment section ----------*/
 
   .assignment{
-    height: 150vh;
+    height: 155vh;
   }
   .assignment>div:first-child{
     width: 38%;
@@ -1215,19 +1234,19 @@
     font-size: 19px;
   }
   .assignment-cards{
-    height: 85%;
+    height: 80%;
     width: 80%;
     grid-template-columns: 1fr;
     gap: 25px;
-    top: 12%;
+    top: 5%;
   }
   .assignment-cards>div:hover{
     transform: scale(1.11);
   }
-  .assignment-1 button , .assignment-2 button{
+  .assignment-1 button , .assignment-2 button, .assignment-5 button, .assignment-6 button{
     font-size: 14px;
   }
-  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4){
+  .assignment-1>a:nth-child(3) , .assignment-2>a:nth-child(3) , .assignment-1>a:nth-child(4), .assignment-5>a:nth-child(4), .assignment-6>a:nth-child(4), .assignment-5>a:nth-child(5), .assignment-6>a:nth-child(5){
     height: 13%;
     top: 82%;
     font-size: 14px;
@@ -1242,10 +1261,13 @@
     font-size: 14px;
     top: 69%;
   }
-  .assignment-3>button , .assignment-4>button{
+  .assignment-3>button , .assignment-4>button , .assignment-7>button{
     height: 13%;
     font-size: 14px;
     top: 84%;
+  }
+  .show-cases{
+    bottom: 5%;
   }
   .form-popup{
     top: 9%;
@@ -1266,6 +1288,11 @@
   }
   .form-container>div>label{
     font-size: 13px;
+  }
+  .assignment-btn-div>button{
+    width: 35%;
+    height: 50%;
+    font-size: 14px;
   }
 
   /*--------- project section ----------*/
